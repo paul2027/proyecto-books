@@ -1,0 +1,19 @@
+
+import { cartInitialState } from "../reducer/cartInitialState";
+
+const Product = ({product, addToCart }) => {
+
+const { id, nombre, precio ,  } = product;
+
+  return (
+    <>
+    <div className="product">
+        <h4>{nombre}</h4>
+        <h5>{precio}</h5>
+        <button onClick={()=>addToCart(id)}>agregar</button>
+    </div>
+    </>
+  )
+}
+
+export default Product
