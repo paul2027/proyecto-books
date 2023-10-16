@@ -7,8 +7,18 @@ export const cartReducer =( state, action) => {
 
             case TYPES.ADD_TO_CART: {
                 const newItem = state.products.find(products => products.id===action.payload);
-                return {...state, 
-                    cart:[...state.cart , newItem]}
+
+                const itemInCart = state.cart.find (item => item.id ===newItem.id )
+
+
+                return itemInCart
+                
+                ? {...state, cart: state.cart.map(item => item.id === newItem.id
+                    ? {...item , quantity: item.quantity + 1} : item)
+                } 
+                
+                : {...state, 
+                    cart:[...state.cart , {...newItem , quantity: 1}]}
             }
 
 
