@@ -1,5 +1,5 @@
 
-import { cartInitialState } from "../reducer/cartInitialState";
+
 
 const Product = ({product, addToCart }) => {
 
