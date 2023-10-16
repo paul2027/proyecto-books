@@ -26,7 +26,7 @@ const ShoppingCart = () => {
    <h2>Carrito de compras</h2>
    <h3>Productos</h3>
 
-   <div classeName="boxproduct">
+   <div className="boxproduct">
     {
         products.map(product => <Product key={product.id} product={product} addToCart ={addToCart}/>)
     }

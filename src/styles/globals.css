@@ -6,15 +6,12 @@
       padding: 1rem ;
       margin: 1rem;
       background-color: lightcoral ;
+      display: flex;
+      flex-wrap: wrap;
 }
 
-.boxproduct{ 
-            display: flex;
-       
-          
-  
-   
-}
+.boxproduct { display: flex;
+             background-color: aquamarine;}
 
 
 
