@@ -72,3 +72,14 @@ padding-left: 8px;}
 .Barrabusqueda {border:none;
 background-color:transparent;}
 
+.Menu {background-color:#319FA5;
+display: flex;
+padding-left: 2rem ;
+padding-top:0.5rem ;
+padding-bottom:0.5rem ;}
+
+.link-menu {color: white;
+padding-right: 1rem;
+text-decoration: none ;
+font-weight: 400;}
+

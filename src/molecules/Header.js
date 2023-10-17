@@ -1,5 +1,6 @@
 import { roboto_Mono } from "@/pages/_app"
 import Image from "next/image"
+import Link from "next/link"
 
 
 const Header = () => {
@@ -33,6 +34,13 @@ const Header = () => {
       height={54}
       alt="Logo Books"
       />
+    </div>
+    <div className="Menu">
+        <Link className="link-menu" href="#categorias">CATEGORÍAS</Link>
+        <Link className="link-menu" href="#best-seller">BEST SELLER</Link>
+        <Link className="link-menu" href="#ficcion">FICCIÓN</Link>
+        <Link className="link-menu" href="#clasicos">CLÁSICOS</Link>
+        <Link className="link-menu" href="#contacto">CONTACTO</Link>
     </div>
    
     
