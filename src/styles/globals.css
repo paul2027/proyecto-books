@@ -56,7 +56,18 @@ padding-bottom: 1rem;
 padding-right: 1rem;
 display:flex;
 align-items: center;
-justify-content: space-between;}
+justify-content: space-between;
+   
+}
+
+@media only screen and (max-width:770px)
+ {.Navbar {
+      justify-content: unset;
+      align-items: unset;
+      flex-direction:column;
+ }
+      
+}
 
 .Buscador {border-width:2px;
 border-radius:15px;
@@ -82,4 +93,14 @@ padding-bottom:0.5rem ;}
 padding-right: 1rem;
 text-decoration: none ;
 font-weight: 400;}
+
+.menuMobile {display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+@media only screen and (max-width:770px)
+ {.imagenLogo{align-self: center;}
+      
+}
 
