@@ -15,7 +15,17 @@ const ShoppingCart = () => {
 
         const addToCart = (id) => dispatch ({type: TYPES.ADD_TO_CART , payload:id}) 
 
-        const deleteFromCart = (id) => dispatch ({type: TYPES.REMOVE_ONE_PRODUCT, payload:id})
+        const deleteFromCart = (id , all) => {
+        if (all) {
+            
+            dispatch ({type: TYPES.REMOVE_ALL_PRODUCTS, payload:id});
+            
+        } else { 
+            dispatch ({type: TYPES.REMOVE_ONE_PRODUCT, payload:id}); 
+            
+        }
+        
+    }
 
         const clearCart = () => dispatch ({type: TYPES.CLEAR_CART})
 
