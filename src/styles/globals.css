@@ -1,4 +1,4 @@
-
+body {margin:0;}
 
 /*************  SHOIPPING-CART  *************/
 
@@ -36,3 +36,71 @@
             width: 180px;
 
 }
+/* Header*/
+.barra-promo {background-color: #6E6E6E;
+      padding-left:1rem;
+      padding-right:1rem;
+      text-align: center;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+    
+}
+
+.Navbar {padding-top: 1rem;
+padding-left:1rem ;
+background-color: #EAEAEA;
+padding-bottom: 1rem;
+padding-right: 1rem;
+display:flex;
+align-items: center;
+justify-content: space-between;
+   
+}
+
+@media only screen and (max-width:770px)
+ {.Navbar {
+      justify-content: unset;
+      align-items: unset;
+      flex-direction:column;
+ }
+      
+}
+
+.Buscador {border-width:2px;
+border-radius:15px;
+border-style: solid;
+border-color: #6E6E6E;
+width: 200px;
+height: 30px;
+display:flex;
+align-items: center;
+padding-right:8px ;
+padding-left: 8px;}
+
+.Barrabusqueda {border:none;
+background-color:transparent;}
+
+.Menu {background-color:#319FA5;
+display: flex;
+padding-left: 2rem ;
+padding-top:0.5rem ;
+padding-bottom:0.5rem ;}
+
+.link-menu {color: white;
+padding-right: 1rem;
+text-decoration: none ;
+font-weight: 400;}
+
+.menuMobile {display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+@media only screen and (max-width:770px)
+ {.imagenLogo{align-self: center;}
+      
+}
+
