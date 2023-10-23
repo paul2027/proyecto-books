@@ -1,10 +1,17 @@
-import CartItems from "@/molecules/CartItems"
-import ShoppingCart from "@/organisms/ShoppingCart"
+
+
+
+import Cardscontainer from "@/organisms/Cardscontainer"
+import Section from "@/organisms/Section"
+
+
 
 const index = () => {
   return (
     <div> 
-      <ShoppingCart/>
+
+      <Section/>
+      <Cardscontainer/>
      
     </div>
   )
