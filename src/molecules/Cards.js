@@ -26,7 +26,7 @@ const Cards = ({infocliente}) => {
           img {
             max-width: 60%;
             height: 60%;
-            margin: 0px 50px 0px 0px;
+            margin: 0px 50px 0px 50px;
           }
 
           h3 {

@@ -2,7 +2,7 @@
 
 
 import Cardscontainer from "@/organisms/Cardscontainer"
-import Section from "@/organisms/Section"
+import VideoText from "@/organisms/VideoText"
 
 
 
@@ -10,9 +10,10 @@ const index = () => {
   return (
     <div> 
 
-      <Section/>
+      <VideoText/>
       <Cardscontainer/>
-     
+      
+      
     </div>
   )
 }
