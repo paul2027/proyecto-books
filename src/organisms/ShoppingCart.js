@@ -7,6 +7,7 @@ import CartItems from "@/molecules/CartItems"
 
 
 
+
 const ShoppingCart = () => {
 
         const [state, dispatch] = useReducer(cartReducer, cartInitialState, )
@@ -29,30 +30,49 @@ const ShoppingCart = () => {
 
         const clearCart = () => dispatch ({type: TYPES.CLEAR_CART})
 
-
-
+        
+        
   return (
    <>
    <h2>Carrito de compras</h2>
-   <h3>Productos</h3>
+       
+        
+    
 
-   <div className="boxproduct">
+         <h3>Total: $ {cart.reduce((acumulador,item)=> {return acumulador + item.precio *item.quantity},0)}</h3>
+            <h4> {cart.reduce((acumulador,item)=> {return acumulador + item.quantity},0)}
+         <img src="\iconCart.png" width="40px"></img></h4>  
+            <button className="buttonclear" onClick={clearCart}>Limpiar carrito</button>
+
+
+       <div className="box">
+        {
+            cart.map((item, i)=> <CartItems key={i} item={item} deleteFromCart={deleteFromCart}/>)
+        }
+        </div>
+       
+ 
+   <h3>Productos</h3>
+    <div className="boxproduct">
     {
         products.map((product) => <Product key={product.id} product={product} addToCart ={addToCart}/>)
     }
 
    </div>
+        <style jsx> {` h4{background-color: #EAEAEA;
+                        width:45px;
+                        margin: 30px;
+                        padding: 3px;
+                        border-radius: 5px}`}
 
-    <h3>Carrito</h3>
-    <div className="box">
-        {
-            cart.map((item, i)=> <CartItems key={i} item={item} deleteFromCart={deleteFromCart}/>)
-        }
-    </div>
-
-    <button onClick={clearCart}>Limpiar carrito</button>
+        </style>
    </>
   )
-}
+}   
 
 export default ShoppingCart
+
+ 
+        
+    
+   

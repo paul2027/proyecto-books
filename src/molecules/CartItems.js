@@ -9,12 +9,16 @@ const CartItems = ({item, deleteFromCart}) => {
 
 
   return (
-    <div className="cart-item">
+    <>
+    <div className="product">
         <h4>{nombre}</h4>
         <h3>{precio} x {quantity} = { precio * quantity}</h3>
         <button onClick={() => deleteFromCart(id, false)}>Eliminar uno</button>
         <button onClick={() => deleteFromCart(id, true)}>Eliminar todos</button>
     </div>
+    
+
+    </>
   )
 }
 

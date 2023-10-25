@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 
+
 const Header = () => {
 const ismobile=useMediaQuery(770)
 
@@ -40,13 +41,15 @@ const ismobile=useMediaQuery(770)
       />
     </div>
       </div>
- 
-    {!ismobile && (
-       <Image
+      
+    {!ismobile && ( 
+      
+       <Image 
        src="/iconos.png"
        width={200}
        height={54}
        alt="Logo Books"
+       
        />
     )}
     </div>
@@ -61,7 +64,7 @@ const ismobile=useMediaQuery(770)
 
     )}
     
-   
+  
     
 
     </>

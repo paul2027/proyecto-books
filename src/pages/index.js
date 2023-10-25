@@ -1,5 +1,4 @@
 
-import CartItems from "@/molecules/CartItems"
 import Header from "@/molecules/Header"
 import ShoppingCart from "@/organisms/ShoppingCart"
 import Cardscontainer from "@/organisms/Cardscontainer"
@@ -12,8 +11,10 @@ const index = () => {
   return (
     <div> 
         <Header/>
+        
+        <Section/>
+        <Cardscontainer/>
         <ShoppingCart/>
-      
 
      
      

@@ -3,16 +3,21 @@ body {margin:0;}
 /*************  SHOIPPING-CART  *************/
 
 .box { 
-      padding: 1rem ;
-      margin: 1rem;
-      background-color: lightcoral ;
+     
       display: flex;
-      flex-wrap: wrap;
+      justify-content: start;
+      flex-wrap: wrap;  
 }
 
 .boxproduct { display: flex;
-             background-color: aquamarine;}
+      justify-content: start;
+      flex-wrap: wrap;
+}
 
+
+
+.buttonclear {  height: 25px;
+}
 
 
 .product { padding:1rem ;
@@ -27,15 +32,44 @@ body {margin:0;}
 
 }
 
-.cart-item { padding:1rem ;
-              background-color:rgb(134, 85, 85);
-              color:white ;
-              border: solid 2px black;
-              margin: 10px;
-              height: 200px;
-            width: 180px;
-
+@media only screen and (max-width:500px)
+ {.boxproduct {
+                  align-items: center;            
+                  flex-direction:column;
+ }
+      .box { align-items: center;            
+              flex-direction:column;     }
 }
+
+@media only screen and (min-width:501px)
+ {.boxproduct {
+                  justify-content: center;          
+                  flex-direction:row;
+ }
+      .box { justify-content: center;            
+              flex-direction:row;     }
+}
+
+@media only screen and (min-width:950px)
+ {.boxproduct {   margin-left: 5rem;
+                  justify-content:start;          
+                  flex-direction:row;
+ }
+      .box { justify-content: start;            
+              flex-direction:row; 
+              margin-left: 5rem;    }
+}
+
+
+/*******************************************************/
+
+
+
+
+
+
+
+
 /* Header*/
 .barra-promo {background-color: #6E6E6E;
       padding-left:1rem;
