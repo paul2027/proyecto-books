@@ -2,8 +2,8 @@ import { TYPES } from "@/actions/actions"
 import { useReducer } from "react"
 import { cartInitialState } from "@/reducer/cartInitialState"
 import { cartReducer } from "@/reducer/cartReducer"
-import Product from "@/molecules/Product"
-import CartItems from "@/molecules/CartItems"
+import Product from "@/components/molecules/Product"
+import CartItems from "@/components/molecules/CartItems"
 
 
 

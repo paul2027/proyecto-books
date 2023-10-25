@@ -1,8 +1,8 @@
 
-import Header from "@/molecules/Header"
-import ShoppingCart from "@/organisms/ShoppingCart"
-import Cardscontainer from "@/organisms/Cardscontainer"
-import Section from "@/organisms/Section"
+import Header from "@/components/molecules/Header"
+import ShoppingCart from "@/components/organisms/ShoppingCart"
+import Cardscontainer from "@/components/organisms/Cardscontainer"
+import Section from "@/components/organisms/Section"
 
 
 
