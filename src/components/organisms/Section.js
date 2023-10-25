@@ -1,53 +1,70 @@
+import Buttons from "@/components/atoms/Buttons";
+
 const Section = () => {
   return (
     <section>
       <div class="video-wrapper">
-        <video width="750" height="500" autoplay controls loop>
-          <source
-            src="https://player.vimeo.com/external/495603819.sd.mp4?s=88c041c8e360596b8137da91bbcedec3631c07eb&profile_id=164&oauth2_token_id=57447761"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-
+        <div class="video-background">
+          <video
+            autoplay="autoplay"
+            loop="loop"
+            muted
+            defaultMuted
+            playsinline
+            oncontextmenu="return false;"
+            preload="auto"
+            id="miVideo"
+          >
+            <source
+              src="https://player.vimeo.com/external/495603819.sd.mp4?s=88c041c8e360596b8137da91bbcedec3631c07eb&profile_id=164&oauth2_token_id=57447761"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
         <div class="header">
-          <h1>Encontrá los mejores libros, ebooks y audiolibros </h1>
+          <h1>Encontrá los mejores libros, ebooks y audiolibros</h1>
           <button>Comprar</button>
         </div>
       </div>
 
       <style jsx>
         {`
-          video {
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-            position:relative;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-          }
-
           .video-wrapper {
             position: relative;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 750px; /* Adjust the width as needed */
+            height: 500px; /* Adjust the height as needed */
           }
 
-          .header{
+          .video-background {
             position: absolute;
-            color: white;
-            text-shadow: 1px 1px 8px rgba(0,0,0,0.6);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
           }
 
-          section{
-            overflow-x: hidden;
+          video {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
           }
 
-
+          .header {
+            position: relative;
+            z-index: 1; /* Ensure the header is on top of the video */
+            text-align: center; /* Center the content */
+            color: #fff; /* Text color */
+            background: rgba(
+              0,
+              0,
+              0,
+              0.5
+            ); /* Background color with some transparency */
+            padding: 20px;
+            box-sizing: border-box;
+          }
         `}
       </style>
     </section>

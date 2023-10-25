@@ -40,6 +40,10 @@ const Cardscontainer = () => {
         flex wrap: wrap; 
         background-color: #EAEAEA;
         height:150px;
+        width: 100vw;
+        overflow-x: hidden;
+        
+        
         
         
     }

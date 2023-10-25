@@ -1,22 +1,18 @@
 
-import Header from "@/components/molecules/Header"
-import ShoppingCart from "@/components/organisms/ShoppingCart"
-import Cardscontainer from "@/components/organisms/Cardscontainer"
-import Section from "@/components/organisms/Section"
 
+
+import Header from "@/components/molecules/Header"
+import VideoText from "@/components/organisms/VideoText"
+import Cardscontainer from "@/organisms/Cardscontainer"
+import Section from "@/organisms/Section"
 
 
 
 const index = () => {
   return (
     <div> 
-        <Header/>
-        
-        <Section/>
-        <Cardscontainer/>
-        <ShoppingCart/>
-
-     
+     <Header/>
+      
      
     </div>
   )
