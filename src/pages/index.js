@@ -1,11 +1,19 @@
-import CartItems from "@/molecules/CartItems"
-import ShoppingCart from "@/organisms/ShoppingCart"
+
+
+
+import Cardscontainer from "@/organisms/Cardscontainer"
+import VideoText from "@/organisms/VideoText"
+
+
 
 const index = () => {
   return (
     <div> 
-      <ShoppingCart/>
-     
+
+      <VideoText/>
+      <Cardscontainer/>
+      
+      
     </div>
   )
 }
