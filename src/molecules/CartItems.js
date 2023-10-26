@@ -1,5 +1,6 @@
 
 import { cartInitialState } from "@/reducer/cartInitialState";
+import { cartReducer } from "@/reducer/cartReducer";
 
 const CartItems = ({item, deleteFfromCart}) => {
 

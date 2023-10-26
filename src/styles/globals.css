@@ -136,3 +136,18 @@ justify-content: space-between;
     
 }
 
+
+/*******+carousel*******/
+img {
+      height: 31rem;
+        
+    }
+    .contenedor{
+      width: 24rem;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      margin-left: 30rem;
+      margin-bottom: 8rem;
+      
+    }
