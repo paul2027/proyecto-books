@@ -89,6 +89,17 @@ padding-left: 2rem ;
 padding-top:0.5rem ;
 padding-bottom:0.5rem ;}
 
+.SideBarMenu {
+      display: flex;
+      flex-direction: column;
+      padding-top:1rem ;
+     }
+.SideBarMenu a{
+      margin-bottom: 1rem;
+      font-size: 20px;
+}
+      
+
 .link-menu {color: white;
 padding-right: 1rem;
 text-decoration: none ;
@@ -102,5 +113,26 @@ justify-content: space-between;
 @media only screen and (max-width:770px)
  {.imagenLogo{align-self: center;}
       
+}
+.carritoOscuro {
+      margin-left: 0.5rem;
+}
+.SideBar {
+      width: 72vw;
+      height: 93vh;
+      background-color: #319fa5f5;
+      position: absolute;
+      padding-left:1rem;
+      padding-top:3rem;
+
+}
+.MenuHambuerguesaSideBar {
+      margin-top: 1.5rem;
+      margin-left: auto;
+      margin-right: auto;
+}
+.carritoSideBar {
+      margin-left: 0.7rem;
+    
 }
 
