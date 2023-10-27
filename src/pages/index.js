@@ -12,16 +12,17 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 const index = () => {
   return (
+    <>
     <div> 
       <Header/>
-      <ShoppingCart/>
-     
-
       <VideoText/>
       <Cardscontainer/>
+      <br></br>
       <CarouselBooks/>
+      <ShoppingCart/>
       
     </div>
+    </>
   )
 }
 
