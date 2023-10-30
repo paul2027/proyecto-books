@@ -11,7 +11,7 @@ const VideoText = () => {
         Tu navegador no admite la etiqueta de video.
       </video>
       <div className="text-overlay">
-        <h1>Encontra los mejores<br />libros, ebooks y<br />audiolibros</h1>
+        <h1>Encontrá los mejores<br />libros, ebooks y<br />audiolibros</h1>
         
       </div>
     </div>
