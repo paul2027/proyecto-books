@@ -1,13 +1,10 @@
-body {margin:0;}
+body {margin:0;
+overflow-x: hidden;}
+
 
 /*************  SHOIPPING-CART  *************/
 
-.box { 
-     
-      display: flex;
-      justify-content: start;
-      flex-wrap: wrap;  
-}
+
 
 .boxproduct { display: flex;
       justify-content: start;
@@ -17,51 +14,134 @@ body {margin:0;}
 
 
 .buttonclear {  height: 25px;
+      margin: 5px;
+      background-color: #319FA5;
+      color: white;
+      border: none;
+      border-radius: .5rem;
+      box-shadow: 2px 2px 2px black;
+      padding: 5px;
+      text-transform: uppercase;
 }
-
 
 .product { padding:1rem ;
             background-color: rgb(64, 107, 121);
             color: white;
             height: 200px;
             width: 180px;
-            border: solid 1px red ;
+            border: solid 1px #319FA5; ;
             margin: 10px;
-            
+      }
 
-
-}
+.productCart { padding:1rem ;
+      background-color: rgb(64, 107, 121);
+      color: white;
+      height: 120px;
+      width: 90px;
+      border: solid 1px red ;
+      margin: 10px;}
 
 @media only screen and (max-width:500px)
  {.boxproduct {
                   align-items: center;            
-                  flex-direction:column;
- }
-      .box { align-items: center;            
-              flex-direction:column;     }
+                  flex-direction:column;}
+
+.spoiler {position:absolute;
+      left: 29%;
+      }
+
+.cartAcumulador {position: relative;
+            left: 82%;
+           top: 25px;
+      }
 }
 
 @media only screen and (min-width:501px)
  {.boxproduct {
                   justify-content: center;          
                   flex-direction:row;
- }
-      .box { justify-content: center;            
-              flex-direction:row;     }
 }
+
+.spoiler {position:absolute;
+      left: 55% ;}
+
+.cartAcumulador {position: relative;
+            left: 92%;
+           top: 25px;
+      } }
 
 @media only screen and (min-width:950px)
  {.boxproduct {   margin-left: 5rem;
                   justify-content:start;          
                   flex-direction:row;
- }
-      .box { justify-content: start;            
-              flex-direction:row; 
-              margin-left: 5rem;    }
-}
+ } 
+
+ .spoiler {position:absolute;
+      left: 58% ;}
+
+.cartAcumulador {position: relative;
+            left: 95%;
+           top: 25px;
+      } }
+
+    
 
 
-/*******************************************************/
+/************************carrito desplegable *******************************/
+
+input[id^="spoiler"]{
+      display: none;
+      }
+
+input[id^="spoiler"] + label {
+      display: flex;
+      justify-content: right; 
+      margin: 10px auto;
+      cursor: pointer;
+      }
+  
+   
+input[id^="spoiler"] ~ .spoiler {
+      width: 0%;
+      height: 0px;
+      opacity: 0;
+      margin: 10px auto ;
+  }
+
+input[id^="spoiler"]:checked + label + .spoiler{
+      height: auto;
+      opacity: 1;
+      width: 40%;
+      box-shadow:  1px 1px 8px #333;}
+  
+   
+.spoiler{ transition: 0.6s;
+  border: solid 1px rgb(0, 0, 0);
+  background-color:#EAEAEA; 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  
+  }
+
+
+
+  .itemCartContainer { display: flex;
+      justify-content:center;
+          flex-wrap: wrap;}
+      
+.cartAcumulador {background-color: #319FA5;
+      color:white;
+      width:16px;
+      text-align: center;
+      font-size: 14px;
+      padding: 1px;
+      border-radius: 5px}
+  
+  .iconCart {width: 40px;
+      margin-right: 20px;}
+ 
 
 
 

@@ -34,38 +34,25 @@ const ShoppingCart = () => {
         
   return (
    <>
-   <h2>Carrito de compras</h2>
        
-        
-    
+   <p className="cartAcumulador"> {cart.reduce((acumulador,item)=> {return acumulador + item.quantity},0)}</p>      
+   <input type="checkbox" id="spoiler2"></input>
 
-         <h3>Total: $ {cart.reduce((acumulador,item)=> {return acumulador + item.precio *item.quantity},0)}</h3>
-            <h4> {cart.reduce((acumulador,item)=> {return acumulador + item.quantity},0)}
-         <img src="\iconCart.png" width="40px"></img></h4>  
-            <button className="buttonclear" onClick={clearCart}>Limpiar carrito</button>
-
-
-       <div className="box">
-        {
+   
+     <label for="spoiler2" ><img className="iconCart" src="\iconCart.png" width="40px"></img></label>
+        <div class="spoiler">   
+            <h3>Total: $ {cart.reduce((acumulador,item)=> {return acumulador + item.precio *item.quantity},0)}</h3>
+             
+            <button className="buttonclear" onClick={clearCart}>Limpiar carrito</button>  
+            <div className="itemCartContainer">
+            {
             cart.map((item, i)=> <CartItems key={i} item={item} deleteFromCart={deleteFromCart}/>)
-        }
-        </div>
-       
+             }
+            </div> 
+         </div>
+
+
  
-   <h3>Productos</h3>
-    <div className="boxproduct">
-    {
-        products.map((product) => <Product key={product.id} product={product} addToCart ={addToCart}/>)
-    }
-
-   </div>
-        <style jsx> {` h4{background-color: #EAEAEA;
-                        width:45px;
-                        margin: 30px;
-                        padding: 3px;
-                        border-radius: 5px}`}
-
-        </style>
    </>
   )
 }   

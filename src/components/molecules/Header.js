@@ -2,6 +2,7 @@ import useMediaQuery from "@/hooks/useMediaQuery"
 import { roboto_Mono } from "@/pages/_app"
 import Image from "next/image"
 import Link from "next/link"
+import ShoppingCart from "../organisms/ShoppingCart"
 
 
 
@@ -23,6 +24,7 @@ const ismobile=useMediaQuery(770)
       alt="Logo Books"
       />
       <div className="menuMobile">
+      
         {ismobile &&(
           <Image
           src="/hamburguesa_verde.png"
@@ -33,25 +35,33 @@ const ismobile=useMediaQuery(770)
         ) }
         <div className="Buscador">
     <input className="Barrabusqueda"/>
+    
     <Image
       src="/lupa.png"
       width={20}
       height={20}
       alt="Logo Books"
       />
+      
     </div>
       </div>
+      {!ismobile && ( 
+
+         
+        <Image 
+        src="/iconos.png"
+        width={200}
+        height={54}
+        alt="Logo Books"
+
+        />
+        )}
+
+
       
-    {!ismobile && ( 
       
-       <Image 
-       src="/iconos.png"
-       width={200}
-       height={54}
-       alt="Logo Books"
-       
-       />
-    )}
+
+
     </div>
     {!ismobile && (
       <div className="Menu">

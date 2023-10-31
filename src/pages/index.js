@@ -18,6 +18,8 @@ const index = () => {
      <VideoText/>
     <Cardscontainer/>
     <ShoppingCart/>
+
+    
     
 
       
