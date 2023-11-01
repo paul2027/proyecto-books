@@ -1,11 +1,8 @@
-
 const Buttons = () => {
-    return (
-      
-      <>
-  
+  return (
+    <>
       <button> Comprar </button>
-  
+
       <style jsx>{`
        button {
           background-color: #319FA5;
@@ -17,13 +14,8 @@ const Buttons = () => {
           text-transform: uppercase;
       
       `}</style>
-  
-  
-      </>
-    )
-  }
-  
-  export default Buttons
+    </>
+  );
+};
 
-
-  
+export default Buttons; // HOLA//
