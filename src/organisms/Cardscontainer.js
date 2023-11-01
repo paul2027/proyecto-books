@@ -6,7 +6,7 @@ const Cardscontainer = () => {
       {
         id:1,
         img: "https://cdn.icon-icons.com/icons2/2785/PNG/512/shipping_icon_177395.png",
-        title:"Envio gratis",
+        title:"Envío gratis",
         text:"en compras de $16.000 o mas.",
       },
       {
@@ -25,7 +25,7 @@ const Cardscontainer = () => {
 
   return (
     <>
-    <div>
+    <div className="cards-container">
         {
             infocliente.map((infocliente, index) => (<Cards key={infocliente.id} infocliente={infocliente}/>
         ))}
@@ -35,18 +35,24 @@ const Cardscontainer = () => {
     </div>
 
     <style jsx>{`
+    
     div{
-        display: flex;
-        flex wrap: wrap; 
-        background-color: #EAEAEA;
-        height:150px;
-        width: 100vw;
-        overflow-x: hidden;
-        
-        
-        
-        
-    }
+      display: flex;
+      flex wrap: wrap; 
+      background-color: #EAEAEA;
+      height:150px;
+      width: 100vw;
+      overflow-x: hidden;
+      
+    
+  }
+  
+    
+    @media (max-width: 768px) {
+      .cards-container {
+        flex-direction: column; 
+      }
+
     
     `}</style>
 
