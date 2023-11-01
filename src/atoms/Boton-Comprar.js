@@ -5,7 +5,8 @@ const Button = () => {
 
       <style>{`
             button {
-            width: 210px;  
+            
+            width: 200px;  
             background-color: #49a1a5;
             color: white;
             border: none;

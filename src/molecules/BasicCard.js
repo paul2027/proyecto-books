@@ -1,9 +1,9 @@
 
 
-import Button from "./Button"
+import Button from "@/atoms/Boton-Comprar";
 
 
-const Card = ({data}) => {
+const BasicCard = ({data}) => {
 
   const {img, title, price} = data;
  
