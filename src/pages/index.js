@@ -14,12 +14,10 @@ const index = () => {
   return (
     <div> 
       <Header/>
-      <ShoppingCart/>
-     
-
       <VideoText/>
       <Cardscontainer/>
       <CarouselBooks/>
+      <ShoppingCart/>
       
     </div>
   )
