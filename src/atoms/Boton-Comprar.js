@@ -13,6 +13,7 @@ const Button = () => {
             box-shadow: 2px 2px 2px #3d4949;
             padding: 10px 20px;
             text-transform: uppercase;
+            
         }
   
         button:hover {
