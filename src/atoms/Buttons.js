@@ -19,4 +19,4 @@ const Buttons = () => {
   );
 };
 
-export default Buttons; // HOLA//
+export default Buttons; 
