@@ -36,6 +36,21 @@ body {margin:0;}
             width: 180px;
 
 }
+
+
+/*************  VIDEO  *************/
+
+
+
+
+
+/*************  CARDS INFO  *************/
+
+@media (max-width: 768px) {
+      .cards-container {
+        flex-direction: column;
+      }}
+=======
 /* Header*/
 .barra-promo {background-color: #6E6E6E;
       padding-left:1rem;
