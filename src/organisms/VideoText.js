@@ -1,5 +1,8 @@
 import React from 'react'
 import Section from './Section'
+import Button from '@/atoms/Boton-Comprar'
+
+
 
 const VideoText = () => {
   return (
@@ -11,9 +14,12 @@ const VideoText = () => {
         Tu navegador no admite la etiqueta de video.
       </video>
       <div className="text-overlay">
-        <h1>Encontrá los mejores<br />libros, ebooks y<br />audiolibros</h1>
-        
+        <h1>Encontrá los mejores<br />libros, ebooks y<br />audiolibros </h1>
+        <div className="button-text-overlay">
+        <Button/>
+        </div>
       </div>
+      
     </div>
     
     <style jsx> {`
@@ -32,9 +38,8 @@ const VideoText = () => {
         overflow-x: hidden;
   }
   
-  
 
-  .text-overlay {
+    .text-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,8 +52,7 @@ const VideoText = () => {
     text-align: right;
     color: #fff; 
     text-align:right;
-    letter-spacing: 1px;
-    
+    letter-spacing: 1px;  
   }
   
   .text-overlay h1 {
@@ -59,6 +63,10 @@ const VideoText = () => {
   .text-overlay p {
     font-size: 16px;
   }
+  .button-text-overlay{
+    margin: 20px 60px; 
+  }
+  
 
 `}
 
