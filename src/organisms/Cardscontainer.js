@@ -41,8 +41,9 @@ const Cardscontainer = () => {
       flex wrap: wrap; 
       background-color: #EAEAEA;
       height:150px;
-      width: 100vw;
+      width: 99vw;
       overflow-x: hidden;
+      justify-content: center;
       
     
   }
