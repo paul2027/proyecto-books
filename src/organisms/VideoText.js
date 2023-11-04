@@ -26,7 +26,7 @@ const VideoText = () => {
   }
   
      video {
-        width: 100vw;
+        width: 99vw;
         height: 100vh;
         object-fit: cover;
         overflow-x: hidden;
@@ -47,6 +47,7 @@ const VideoText = () => {
     text-align: right;
     color: #fff; 
     text-align:right;
+    letter-spacing: 1px;
     
   }
   
