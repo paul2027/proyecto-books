@@ -45,12 +45,14 @@ body {margin:0;}
 
 
 /*************  CARDS INFO  *************/
-
-@media (max-width: 768px) {
-      .cards-container {
+@media only screen and (max-width:770px) {
+      .cards-container-info {
         flex-direction: column;
-      }}
-=======
+        align-items: center; 
+      }
+    }
+
+
 /* Header*/
 .barra-promo {background-color: #6E6E6E;
       padding-left:1rem;
