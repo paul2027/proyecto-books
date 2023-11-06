@@ -1,7 +1,7 @@
-import Cards from "@/molecules/Cards"
+import CardsInfo from "@/molecules/CardsInfo" 
 
 
-const Cardscontainer = () => {
+const CardscontainerInfo = () => {
     const infocliente = [
       {
         id:1,
@@ -25,9 +25,9 @@ const Cardscontainer = () => {
 
   return (
     <>
-    <div className="cards-container">
+    <div className="cards-container-info">
         {
-            infocliente.map((infocliente, index) => (<Cards key={infocliente.id} infocliente={infocliente}/>
+            infocliente.map((infocliente, index) => (<CardsInfo key={infocliente.id} infocliente={infocliente}/>
         ))}
 
 
@@ -45,14 +45,16 @@ const Cardscontainer = () => {
       overflow-x: hidden;
       justify-content: center;
       
+      
     
   }
   
     
-    @media (max-width: 768px) {
-      .cards-container {
-        flex-direction: column; 
-      }
+  @media (max-width: 768px) {
+    .cards-container-info {
+      flex-direction: column;
+      align-items: center; 
+    }
 
     
     `}</style>
@@ -63,4 +65,4 @@ const Cardscontainer = () => {
   )
 }
 
-export default Cardscontainer
+export default CardscontainerInfo

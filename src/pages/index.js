@@ -1,13 +1,13 @@
-import CartItems from "@/molecules/CartItems"
+
 import Header from "@/molecules/Header"
 import ShoppingCart from "@/organisms/ShoppingCart"
 
 
 
-import Cardscontainer from "@/organisms/Cardscontainer"
 import VideoText from "@/organisms/VideoText"
 import CarouselBooks from "@/organisms/CarouselBooks"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import CardscontainerInfo from "@/organisms/CardscontainerInfo"
 
 
 const index = () => {
@@ -16,7 +16,7 @@ const index = () => {
     <div> 
       <Header/>
       <VideoText/>
-      <Cardscontainer/>
+      <CardscontainerInfo/>
       <br></br>
       <CarouselBooks/>
       <ShoppingCart/>
