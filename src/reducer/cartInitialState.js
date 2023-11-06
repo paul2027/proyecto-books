@@ -1,4 +1,6 @@
 
+
+
 export const cartInitialState = {
 
     products :[  { id: 1 ,nombre: "producto A" ,precio :200 },
@@ -13,6 +15,7 @@ export const cartInitialState = {
 ],
             
             }
+            
 
 
 

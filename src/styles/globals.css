@@ -1,154 +1,57 @@
 body {margin:0;
-overflow-x: hidden;}
-
+overflow-x: hidden ;}
 
 /*************  SHOIPPING-CART  *************/
 
-
+  /* contenedor de prueba para productos a comprar*/
 
 .boxproduct { display: flex;
-      justify-content: start;
-      flex-wrap: wrap;
-}
+            flex-wrap: wrap;
+             background-color: aquamarine;}
 
 
 
+
+
+        /* boton de limpiar carrito */
 .buttonclear {  height: 25px;
-      margin: 5px;
-      background-color: #319FA5;
-      color: white;
-      border: none;
-      border-radius: .5rem;
-      box-shadow: 2px 2px 2px black;
-      padding: 5px;
-      text-transform: uppercase;
-}
-
-.product { padding:1rem ;
-            background-color: rgb(64, 107, 121);
-            color: white;
-            height: 200px;
-            width: 180px;
-            border: solid 1px #319FA5; ;
-            margin: 10px;
-      }
-
-.productCart { padding:1rem ;
-      background-color: rgb(64, 107, 121);
-      color: white;
-      height: 120px;
-      width: 90px;
-      border: solid 1px red ;
-      margin: 10px;}
-
-@media only screen and (max-width:500px)
- {.boxproduct {
-                  align-items: center;            
-                  flex-direction:column;}
-
-.spoiler {position:absolute;
-      left: 29%;
-      }
-
-.cartAcumulador {position: relative;
-            left: 82%;
-           top: 25px;
-      }
-}
-
-@media only screen and (min-width:501px)
- {.boxproduct {
-                  justify-content: center;          
-                  flex-direction:row;
-}
-
-.spoiler {position:absolute;
-      left: 55% ;}
-
-.cartAcumulador {position: relative;
-            left: 92%;
-           top: 25px;
-      } }
-
-@media only screen and (min-width:950px)
- {.boxproduct {   margin-left: 5rem;
-                  justify-content:start;          
-                  flex-direction:row;
- } 
-
- .spoiler {position:absolute;
-      left: 58% ;}
-
-.cartAcumulador {position: relative;
-            left: 95%;
-           top: 25px;
-      } }
-
-    
+                  margin: 5px;
+                  background-color: #319FA5;
+                  color: white;
+                  border: none;
+                  border-radius: .5rem;
+                  box-shadow: 2px 2px 2px black;
+                  padding: 5px;
+                  text-transform: uppercase;
+            }
+            
+              /* producto a comprar */
+            .product { padding:1rem ;
+                        background-color: rgb(64, 107, 121);
+                        color: white;
+                        height: 200px;
+                        width: 180px;
+                        border: solid 1px red ;
+                        border: solid 1px #319FA5; ;
+                        margin: 10px;
+            
+            
+                  }
+            
+            /* como se ve la  tarjeta dentro del carrito */
+            .productCart { padding:1rem ;
+                  
+                  background-color: rgb(64, 107, 121);
+                  color: white;
+                  height: 150px;
+                  width: 110px;
+                  border: solid 1px red ;
+                  margin: 10px;}
+            
 
 
-/************************carrito desplegable *******************************/
-
-input[id^="spoiler"]{
-      display: none;
-      }
-
-input[id^="spoiler"] + label {
-      display: flex;
-      justify-content: right; 
-      margin: 10px auto;
-      cursor: pointer;
-      }
-  
-   
-input[id^="spoiler"] ~ .spoiler {
-      width: 0%;
-      height: 0px;
-      opacity: 0;
-      margin: 10px auto ;
-  }
-
-input[id^="spoiler"]:checked + label + .spoiler{
-      height: auto;
-      opacity: 1;
-      width: 40%;
-      box-shadow:  1px 1px 8px #333;}
-  
-   
-.spoiler{ transition: 0.6s;
-  border: solid 1px rgb(0, 0, 0);
-  background-color:#EAEAEA; 
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  
-  }
-
-
-
-  .itemCartContainer { display: flex;
-      justify-content:center;
-          flex-wrap: wrap;}
-      
-.cartAcumulador {background-color: #319FA5;
-      color:white;
-      width:16px;
-      text-align: center;
-      font-size: 14px;
-      padding: 1px;
-      border-radius: 5px}
-  
-  .iconCart {width: 40px;
-      margin-right: 20px;}
- 
-
-
-
-
-
-
-
+         
+/*-----------------------------------------------------*/
 
 /* Header*/
 .barra-promo {background-color: #6E6E6E;
@@ -163,7 +66,7 @@ input[id^="spoiler"]:checked + label + .spoiler{
     
 }
 
-.Navbar {padding-top: 1rem;
+.Navbar {padding-top: 1rem;  
 padding-left:1rem ;
 background-color: #EAEAEA;
 padding-bottom: 1rem;
@@ -203,6 +106,17 @@ padding-left: 2rem ;
 padding-top:0.5rem ;
 padding-bottom:0.5rem ;}
 
+.SideBarMenu {
+      display: flex;
+      flex-direction: column;
+      padding-top:1rem ;
+     }
+.SideBarMenu a{
+      margin-bottom: 1rem;
+      font-size: 20px;
+}
+      
+
 .link-menu {color: white;
 padding-right: 1rem;
 text-decoration: none ;
@@ -217,4 +131,42 @@ justify-content: space-between;
  {.imagenLogo{align-self: center;}
       
 }
+.carritoOscuro {
+      margin-left: 0.5rem;
+}
+.SideBar {
+      width: 72vw;
+      height: 93vh;
+      background-color: #319fa5f5;
+      position: absolute;
+      padding-left:1rem;
+      padding-top:3rem;
 
+}
+.MenuHambuerguesaSideBar {
+      margin-top: 1.5rem;
+      margin-left: auto;
+      margin-right: auto;
+}
+.carritoSideBar {
+      margin-left: 0.7rem;
+    
+}
+
+
+/*******carousel*******/
+        
+    
+    .contenedor{
+      width: 24rem;
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      margin-left: 30rem;
+      margin-bottom: 8rem;
+      
+    }
+
+    .contenedor > img {height: 29rem;
+                        object-fit: contain;
+              }

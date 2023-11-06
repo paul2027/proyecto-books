@@ -1,7 +1,7 @@
 
 import { TYPES } from "@/actions/actions";
 import { cartInitialState } from "./cartInitialState";
-import Product from "@/components/molecules/Product"
+
 
 export const cartReducer =( state, action) => {
         switch (action.type) {

@@ -8,6 +8,9 @@ import CartItems from "@/components/molecules/CartItems"
 
 
 
+
+
+
 const ShoppingCart = () => {
 
         const [state, dispatch] = useReducer(cartReducer, cartInitialState, )
@@ -30,36 +33,44 @@ const ShoppingCart = () => {
 
         const clearCart = () => dispatch ({type: TYPES.CLEAR_CART})
 
+
         
         
   return (
    <>
-       
-   <p className="cartAcumulador"> {cart.reduce((acumulador,item)=> {return acumulador + item.quantity},0)}</p>      
-   <input type="checkbox" id="spoiler2"></input>
+
+        
+            <p className="cartAcumulador"> {cart.reduce((acumulador,item)=> {return acumulador + item.quantity},0)}</p>  
+            <h3>Total: $ {cart.reduce((acumulador,item)=> {return acumulador + item.precio *item.quantity},0)}</h3>
+
+            <button className="buttonclear" onClick={clearCart}>Limpiar carrito</button>  
+
+         
+            
+           {cart.map((item, i)=> <CartItems key={i} item={item} deleteFromCart={deleteFromCart}/>) }
+             
+           
+
+    
+                
 
    
-     <label for="spoiler2" ><img className="iconCart" src="\iconCart.png" width="40px"></img></label>
-        <div class="spoiler">   
-            <h3>Total: $ {cart.reduce((acumulador,item)=> {return acumulador + item.precio *item.quantity},0)}</h3>
-             
-            <button className="buttonclear" onClick={clearCart}>Limpiar carrito</button>  
-            <div className="itemCartContainer">
-            {
-            cart.map((item, i)=> <CartItems key={i} item={item} deleteFromCart={deleteFromCart}/>)
-             }
-            </div> 
-         </div>
+            <h3>Productos</h3>
+    <div className="boxproduct">
+
+   { products.map((product) => <Product key={product.id} product={product} addToCart ={addToCart}/>)}
 
 
- 
+
+</div>
+        
+
+         
+        
    </>
+ 
+   
   )
 }   
 
 export default ShoppingCart
-
- 
-        
-    
-   

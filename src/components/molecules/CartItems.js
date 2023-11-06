@@ -1,6 +1,5 @@
 
-import { cartInitialState } from "@/reducer/cartInitialState";
-import { cartReducer } from "@/reducer/cartReducer";
+
 
 const CartItems = ({item, deleteFromCart}) => {
 
@@ -10,6 +9,7 @@ const CartItems = ({item, deleteFromCart}) => {
 
   return (
     <>
+
     <div className="productCart">
         <h4>{nombre}</h4>
         <p> {quantity} uds = { precio * quantity}</p>
