@@ -21,6 +21,7 @@ overflow-x: hidden ;}
                   box-shadow: 2px 2px 2px black;
                   padding: 5px;
                   text-transform: uppercase;
+                 
             }
             
               /* producto a comprar de prueba */
@@ -52,42 +53,51 @@ overflow-x: hidden ;}
          .dropdown {
             position: relative;
             display: inline-block;
+           
+            
+       
         }
 
-        .dropbtn {
-            background-color: #3498DB;
-            color: white;
-            padding: 10px;
-            border: none;
+        .cartImage { width: 4rem;
             cursor: pointer;
+            
         }
 
         /* Estilos para el contenido desplegable */
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            background-color: #f9f9f9;   
+            width: 400px;
+            box-shadow: 4px 8px 16px #319FA5;;
             z-index: 1;
+          
+            
         }
-
-        /* Estilos para los elementos del menú desplegable */
-        .dropdown-content a {
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        /* Cambiar el color de fondo de los elementos del menú al pasar el ratón sobre ellos */
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
+        
 
         /* Mostrar el menú desplegable cuando se pasa el ratón sobre el botón */
         .dropdown:hover .dropdown-content {
-            display: block;
+            display:block;
         }
+
+        .cartAcumulador { position: relative;
+                        width: 20px;
+                  background-color: red;
+                  border-radius: 20px;
+                  text-align: center
+                  
+      ;}
+
+      .productContainer {display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+           
+      
+           
+    }
+    .acumuladorContainer {display: flex;
+justify-content: center;}
 /*-----------------------------------------------------*/
 
 /* Header*/

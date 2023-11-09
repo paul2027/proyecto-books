@@ -43,20 +43,23 @@ const ShoppingCart = () => {
 
         
 
-
+         <h5 className="cartAcumulador"> {cart.reduce((acumulador,item)=> {return acumulador + item.quantity},0)}</h5>
     <div class="dropdown">
-        <p className="cartAcumulador"> {cart.reduce((acumulador,item)=> {return acumulador + item.quantity},0)}</p>  
+         
 
-         <button class="dropbtn">carrito</button>
+        <img className="cartImage" src="\carrito.b.png"></img>
 
         <div class="dropdown-content">
-        <button className="buttonclear" onClick={clearCart}>Limpiar carrito</button>
+                <div className="acumuladorContainer">
+                     <h3 >Total carrito: $ {cart.reduce((acumulador,item)=> {return acumulador + item.precio *item.quantity},0)}</h3>
+                </div>
 
-        <h3>Total: $ {cart.reduce((acumulador,item)=> {return acumulador + item.precio *item.quantity},0)}</h3>
-
-        {cart.map((item, i)=>  <CartItems key={i} item={item} deleteFromCart={deleteFromCart}/> ) }
-
-       
+                <div className="productContainer">
+                    {cart.map((item, i)=>  <CartItems key={i} item={item} deleteFromCart={deleteFromCart}/> ) }
+                </div>
+                <div className="acumuladorContainer">
+                <button className="buttonclear" onClick={clearCart}>Limpiar carrito</button>
+                </div >
         </div>
     </div>
 
