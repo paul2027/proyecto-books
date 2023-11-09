@@ -7,10 +7,7 @@ overflow-x: hidden ;}
 
 .boxproduct { display: flex;
             flex-wrap: wrap;
-             background-color: aquamarine;}
-
-
-
+             }
 
 
         /* boton de limpiar carrito */
@@ -26,7 +23,7 @@ overflow-x: hidden ;}
                   text-transform: uppercase;
             }
             
-              /* producto a comprar */
+              /* producto a comprar de prueba */
             .product { padding:1rem ;
                         background-color: rgb(64, 107, 121);
                         color: white;
@@ -39,7 +36,7 @@ overflow-x: hidden ;}
             
                   }
             
-            /* como se ve la  tarjeta dentro del carrito */
+            /* como se ve la  tarjeta de prueba dentro del carrito */
             .productCart { padding:1rem ;
                   
                   background-color: rgb(64, 107, 121);
@@ -48,20 +45,49 @@ overflow-x: hidden ;}
                   width: 110px;
                   border: solid 1px red ;
                   margin: 10px;}
-            
-.cartItems{ 
-      display: flex;
-      flex-wrap: wrap;}
 
-.Cartcontainer{display: flex;
-      flex-direction: column;
-      background-color:  grey;
-      border:solid black 1px ;
-      width: 50%;
-      height: 50%;
-      align-items: center;}
 
-         
+     /*carrito desplegable */
+
+         .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: #3498DB;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para el contenido desplegable */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Estilos para los elementos del menú desplegable */
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Cambiar el color de fondo de los elementos del menú al pasar el ratón sobre ellos */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Mostrar el menú desplegable cuando se pasa el ratón sobre el botón */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 /*-----------------------------------------------------*/
 
 /* Header*/
