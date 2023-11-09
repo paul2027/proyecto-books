@@ -1,4 +1,4 @@
-
+body {margin:0;}
 
 /*************  SHOIPPING-CART  *************/
 
@@ -37,11 +37,126 @@
 
 }
 
-/*******+carousel*******/
-img {
-      height: 31rem;
-        
+
+/*************  VIDEO  *************/
+
+
+
+
+
+/*************  CARDS INFO  *************/
+@media only screen and (max-width:770px) {
+      .cards-container-info {
+        flex-direction: column;
+        align-items: center; 
+      }
     }
+
+
+/* Header*/
+.barra-promo {background-color: #6E6E6E;
+      padding-left:1rem;
+      padding-right:1rem;
+      text-align: center;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      color: white;
+      display: flex;
+      flex-direction: row;
+    
+}
+
+.Navbar {padding-top: 1rem;
+padding-left:1rem ;
+background-color: #EAEAEA;
+padding-bottom: 1rem;
+padding-right: 1rem;
+display:flex;
+align-items: center;
+justify-content: space-between;
+   
+}
+
+@media only screen and (max-width:770px)
+ {.Navbar {
+      justify-content: unset;
+      align-items: unset;
+      flex-direction:column;
+ }
+      
+}
+
+.Buscador {border-width:2px;
+border-radius:15px;
+border-style: solid;
+border-color: #6E6E6E;
+width: 200px;
+height: 30px;
+display:flex;
+align-items: center;
+padding-right:8px ;
+padding-left: 8px;}
+
+.Barrabusqueda {border:none;
+background-color:transparent;}
+
+.Menu {background-color:#319FA5;
+display: flex;
+padding-left: 2rem ;
+padding-top:0.5rem ;
+padding-bottom:0.5rem ;}
+
+.SideBarMenu {
+      display: flex;
+      flex-direction: column;
+      padding-top:1rem ;
+     }
+.SideBarMenu a{
+      margin-bottom: 1rem;
+      font-size: 20px;
+}
+      
+
+.link-menu {color: white;
+padding-right: 1rem;
+text-decoration: none ;
+font-weight: 400;}
+
+.menuMobile {display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+@media only screen and (max-width:770px)
+ {.imagenLogo{align-self: center;}
+      
+}
+.carritoOscuro {
+      margin-left: 0.5rem;
+}
+.SideBar {
+      width: 72vw;
+      height: 93vh;
+      background-color: #319fa5f5;
+      position: absolute;
+      padding-left:1rem;
+      padding-top:3rem;
+
+}
+.MenuHambuerguesaSideBar {
+      margin-top: 1.5rem;
+      margin-left: auto;
+      margin-right: auto;
+}
+.carritoSideBar {
+      margin-left: 0.7rem;
+    
+}
+
+
+/*******carousel*******/
+        
+    
     .contenedor{
       width: 24rem;
       display: flex;
@@ -51,3 +166,7 @@ img {
       margin-bottom: 8rem;
       
     }
+
+    .contenedor > img {height: 29rem;
+                        object-fit: contain;
+              }

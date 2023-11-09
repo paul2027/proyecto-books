@@ -9,7 +9,7 @@ const CarouselBooks = () => {
     <Carousel.Item>
       <div className='contenedor'>
          <img
-        className="d-block w-100"
+        className="d-block w-100" 
         src="https://images.cdn3.buscalibre.com/fit-in/360x360/e9/5f/e95fc48fb61be87d0330ef997a201e27.jpg"
         alt="El retrato de Dorian Grey"
       />

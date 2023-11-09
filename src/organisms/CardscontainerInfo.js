@@ -1,12 +1,12 @@
-import Cards from "@/molecules/Cards"
+import CardsInfo from "@/molecules/CardsInfo" 
 
 
-const Cardscontainer = () => {
+const CardscontainerInfo = () => {
     const infocliente = [
       {
         id:1,
         img: "https://cdn.icon-icons.com/icons2/2785/PNG/512/shipping_icon_177395.png",
-        title:"Envio gratis",
+        title:"Envío gratis",
         text:"en compras de $16.000 o mas.",
       },
       {
@@ -25,9 +25,9 @@ const Cardscontainer = () => {
 
   return (
     <>
-    <div>
+    <div className="cards-container-info">
         {
-            infocliente.map((infocliente, index) => (<Cards key={infocliente.id} infocliente={infocliente}/>
+            infocliente.map((infocliente, index) => (<CardsInfo key={infocliente.id} infocliente={infocliente}/>
         ))}
 
 
@@ -35,18 +35,27 @@ const Cardscontainer = () => {
     </div>
 
     <style jsx>{`
+    
     div{
-        display: flex;
-        flex wrap: wrap; 
-        background-color: #EAEAEA;
-        height:150px;
-        width: 100vw;
-        overflow-x: hidden;
-        
-        
-        
-        
+      display: flex;
+      flex wrap: wrap; 
+      background-color: #EAEAEA;
+      height:150px;
+      width: 99vw;
+      overflow-x: hidden;
+      justify-content: center;
+      
+      
+    
+  }
+  
+    
+  @media (max-width: 768px) {
+    .cards-container-info {
+      flex-direction: column;
+      align-items: center; 
     }
+
     
     `}</style>
 
@@ -56,4 +65,4 @@ const Cardscontainer = () => {
   )
 }
 
-export default Cardscontainer
+export default CardscontainerInfo
