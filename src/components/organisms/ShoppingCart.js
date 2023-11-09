@@ -6,11 +6,6 @@ import Product from "@/components/molecules/Product"
 import CartItems from "@/components/molecules/CartItems"
 
 
-
-
-
-
-
 const ShoppingCart = () => {
 
         const [state, dispatch] = useReducer(cartReducer, cartInitialState, )
@@ -38,35 +33,28 @@ const ShoppingCart = () => {
         
   return (
    <>
+   
+         
+            <h3>Productos</h3>
+         <div className="boxproduct">
 
-        
+         { products.map((product) => <Product key={product.id} product={product} addToCart ={addToCart}/>)}
+
+         </div>
+
+        <div className="Cartcontainer">
             <p className="cartAcumulador"> {cart.reduce((acumulador,item)=> {return acumulador + item.quantity},0)}</p>  
             <h3>Total: $ {cart.reduce((acumulador,item)=> {return acumulador + item.precio *item.quantity},0)}</h3>
+        
 
-            <button className="buttonclear" onClick={clearCart}>Limpiar carrito</button>  
+        
+            <button className="buttonclear" onClick={clearCart}>Limpiar carrito</button>
+        <div className="cartItems">
 
-         
-            
            {cart.map((item, i)=> <CartItems key={i} item={item} deleteFromCart={deleteFromCart}/>) }
-             
-           
+        </div>   
+        </div>
 
-    
-                
-
-   
-            <h3>Productos</h3>
-    <div className="boxproduct">
-
-   { products.map((product) => <Product key={product.id} product={product} addToCart ={addToCart}/>)}
-
-
-
-</div>
-        
-
-         
-        
    </>
  
    

@@ -2,7 +2,6 @@ import useMediaQuery from "@/hooks/useMediaQuery"
 import { roboto_Mono } from "@/pages/_app"
 import Image from "next/image"
 import Link from "next/link"
-import ShoppingCart from "../organisms/ShoppingCart"
 
 
 
@@ -53,8 +52,9 @@ const ismobile=useMediaQuery(770)
         width={200}
         height={54}
         alt="Logo Books"
-
+        
         />
+        
         )}
 
 
