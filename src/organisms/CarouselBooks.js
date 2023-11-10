@@ -25,7 +25,7 @@ const CarouselBooks = () => {
     <Carousel.Item>
     <div className='contenedor'>
       <img
-        className="d-block w-100"
+        className="estiloImagen"
         src="https://tienda.planetadelibros.com.ar/cdn/shop/products/portada_la-metamorfosis__202101071915_720x.jpg?v=1684351442"
         alt="La Metamorfosis"
       />
@@ -42,7 +42,7 @@ const CarouselBooks = () => {
     <Carousel.Item>
     <div className='contenedor'>
       <img
-        className="d-block w-100"
+        className="estiloImagen"
         src="https://images.cdn1.buscalibre.com/fit-in/360x360/07/c8/07c8ab4dfef3c9dcd62c9685707492b3.jpg"
         alt="Las Aventuras de Sherlock Holmes"
       />
@@ -61,7 +61,7 @@ const CarouselBooks = () => {
     <Carousel.Item>
     <div className='contenedor'>
       <img
-        className="d-block w-100"
+        className="estiloImagen"
         src="https://images.cdn1.buscalibre.com/fit-in/360x360/42/7f/427f18ddc9cb21b5d943a63517df875a.jpg"
         alt="Alicia en el país de las Maravillas"
       />
@@ -79,7 +79,7 @@ const CarouselBooks = () => {
     <Carousel.Item>
     <div className='contenedor'>
       <img
-        className="d-block w-100"
+        className="estiloImagen"
         src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1623078210-la-naranja-mecanica-anthony-burgess-201505261226.jpg?crop=1xw:1xh;center,top&resize=980:*"
         alt="Alicia en el país de las Maravillas"
       />
