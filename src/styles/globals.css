@@ -1,5 +1,4 @@
-body {margin:0;
-overflow-x: hidden ;}
+body {margin:0;}
 
 /*************  SHOIPPING-CART  *************/
 
@@ -146,7 +145,7 @@ justify-content: center;}
         align-items: center; 
       }
     }
-
+ acca4dd64e931339df6879d02733e4890a1a3280
     
 
 
@@ -163,7 +162,7 @@ justify-content: center;}
     
 }
 
-.Navbar {padding-top: 1rem;  
+.Navbar {padding-top: 1rem;
 padding-left:1rem ;
 background-color: #EAEAEA;
 padding-bottom: 1rem;
