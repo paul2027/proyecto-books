@@ -5,100 +5,150 @@ overflow-x: hidden ;}
 
   /* contenedor de prueba para productos a comprar*/
 
-.boxproduct { display: flex;
-            flex-wrap: wrap;
-             }
+  .boxproduct { display: flex;
+      flex-wrap: wrap;
+       }
 
 
-        /* boton de limpiar carrito */
-.buttonclear {  height: 25px;
-                  width: 150px;
-                  margin: 5px;
-                  background-color: #319FA5;
-                  color: white;
-                  border: none;
-                  border-radius: .5rem;
-                  box-shadow: 2px 2px 2px black;
-                  padding: 5px;
-                  text-transform: uppercase;
-                 
-            }
-            
-              /* producto a comprar de prueba */
-            .product { padding:1rem ;
-                        background-color: rgb(64, 107, 121);
-                        color: white;
-                        height: 200px;
-                        width: 180px;
-                        border: solid 1px red ;
-                        border: solid 1px #319FA5; ;
-                        margin: 10px;
-            
-            
-                  }
-            
-            /* como se ve la  tarjeta de prueba dentro del carrito */
-            .productCart { padding:1rem ;
-                  
+  /* boton de limpiar carrito */
+.buttonclear {  height: 1.56rem;
+            width: 9.37rem;
+            margin: 15px;
+            background-color: #319FA5;
+            color: white;
+            border: none;
+            border-radius: .5rem;
+            box-shadow: 2px 2px 2px black;
+            padding: 4px;
+         
+           
+      }
+      
+        /* producto a comprar de prueba */
+      .product { padding:1rem ;
                   background-color: rgb(64, 107, 121);
                   color: white;
-                  height: 150px;
-                  width: 110px;
+                  height: 12.5rem;
+                  width: 11.25rem;
                   border: solid 1px red ;
-                  margin: 10px;}
+                  border: solid 1px #319FA5; ;
+                  margin: 10px;
+         }
+    
+/***   carrito desplegable   ***/
 
+.dropContainerGeneral {position: relative;
+      right: 1rem;
+bottom : 95.5rem;
+ }
 
-     /*carrito desplegable */
+.dropContainer{ display: flex;
+     justify-content:flex-end;
+    
+}
 
-         .dropdown {
-            position: relative;
-            display: inline-block;
-           
-            
-       
-        }
+.dropdown {
+      display: 
+       inline-block;
+    
 
-        .cartImage { width: 4rem;
-            cursor: pointer;
-            
-        }
+  }
 
-        /* Estilos para el contenido desplegable */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;   
-            width: 400px;
-            box-shadow: 4px 8px 16px #319FA5;;
-            z-index: 1;
-          
-            
-        }
-        
+  .cartImage { width: 3.25rem;
+      cursor: pointer;
+      position:relative;
 
-        /* Mostrar el menú desplegable cuando se pasa el ratón sobre el botón */
-        .dropdown:hover .dropdown-content {
-            display:block;
-        }
-
-        .cartAcumulador { position: relative;
-                        width: 20px;
-                  background-color: red;
-                  border-radius: 20px;
-                  text-align: center
-                  
-      ;}
-
-      .productContainer {display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-           
+    
       
-           
-    }
-    .acumuladorContainer {display: flex;
+  }
+
+  /* Estilos para el contenido desplegable */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      margin-left: -35.62rem; 
+      border-radius: 0.94rem;
+      background-color:#eaeaea;   
+      width: 38rem;
+      box-shadow: 2px 8px 16px #319FA5;;
+      z-index: 1;
+    
+      
+  }
+  
+
+  /* Mostrar el menú desplegable cuando se pasa el cursor sobre el botón */
+  .dropdown:hover .dropdown-content {
+      display:block;
+      
+      
+
+  }
+
+  .cartAcumulador { position: relative;
+                  left: 1rem;
+                  width: 1.25rem;
+                  height: 1.37rem;
+            background-color: red;
+            font-size: medium;
+            color: white;
+            border-radius: 1.25rem;
+            text-align: center;
+            z-index: 1;
+            
+;}
+
+.productContainer {display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+     
+
+     
+}
+.acumuladorContainer {display: flex;
 justify-content: center;}
-/*-----------------------------------------------------*/
+
+.carritOscuro {margin-left: 0.62rem;}
+
+/* Estilos en modo tablet */
+@media only screen and (min-width: 36.25rem) and (max-width:51.8rem) {
+      .dropContainerGeneral {position: relative;
+            right: 1rem;
+      bottom : 131.4rem;
+}
+.dropdown-content { width: 30rem;
+      margin-left: -27.5rem; 
+}
+}
+/*Estilos en modo mobile*/
+@media only screen and (max-width: 36.25rem) {
+      .dropContainerGeneral {position: relative;
+            right: 0rem;
+      bottom : 109rem;
+}
+.dropdown-content { width: 22rem;
+      margin-left: -20rem; 
+;}
+
+}
+
+
+/*************  VIDEO  *************/
+
+
+
+
+
+/*************  CARDS INFO  *************/
+@media only screen and (max-width:770px) {
+      .cards-container-info {
+        flex-direction: column;
+        align-items: center; 
+      }
+    }
+
+    
+
 
 /* Header*/
 .barra-promo {background-color: #6E6E6E;
@@ -203,17 +253,22 @@ justify-content: space-between;
 
 /*******carousel*******/
         
-    
-    .contenedor{
-      width: 24rem;
-      display: flex;
-      flex-direction: column;
-      justify-items: center;
-      margin-left: 30rem;
-      margin-bottom: 8rem;
-      
-    }
 
-    .contenedor > img {height: 29rem;
-                        object-fit: contain;
-              }
+
+.estiloImagen {
+  height: 31rem;
+  margin: auto;
+}    
+.contenedor{
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin: auto;
+      
+}    
+
+
+.estiloTitulo {
+  padding-top: 130px;
+}
