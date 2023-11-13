@@ -1,3 +1,5 @@
+
+
 import { TYPES } from "@/actions/actions" 
 import { useReducer } from "react"
 import { cartInitialState } from "@/reducer/cartInitialState"
@@ -21,27 +23,41 @@ const ShoppingCart = () => {
 
 
 
-  return (
-   <>
-   <h2>Carrito de compras</h2>
-   <h3>Productos</h3>
-
-   <div className="boxproduct">
-    {
-        products.map(product => <Product key={product.id} product={product} addToCart ={addToCart}/>)
-    }
-
-   </div>
-
-    <h3>Carrito</h3>
-    <div className="box">
-        {
-            cart.map((item, i)=> <CartItems key={i} item={item} deleteFromCart={deleteFromCart}/>)
-        }
+  
+    return (
+        <>
+<div className="dropContainerGeneral">
+    <div className="dropContainer">
+              <h5 className="cartAcumulador"> {cart.reduce((acumulador,item)=> {return acumulador + item.quantity},0)}</h5>
+          <div class="dropdown">
+              
+     
+             <img className="cartImage" src="\carrito.b.png"></img>
+     
+              <div class="dropdown-content">
+                
+                     <div className="acumuladorContainer">
+                          <h3 >Total carrito: $ {cart.reduce((acumulador,item)=> {return acumulador + item.precio *item.quantity},0)}</h3>
+                     </div>
+     
+                     <div className="productContainer">
+                         {cart.map((item, i)=>  <CartItems key={i} item={item} deleteFromCart={deleteFromCart}/> ) }
+                     </div>
+                     <div className="acumuladorContainer">
+                     <button className="buttonclear" onClick={clearCart}>Limpiar carrito</button>
+                     </div >
+              </div>
+            </div>
+         </div>
     </div>
-
-    <button onClick={clearCart}>Limpiar carrito</button>
-   </>
+    
+         <h3>Productos</h3>
+              <div className="boxproduct">
+     
+              { products.map((product) => <Product key={product.id} product={product} addToCart ={addToCart}/>)}
+     
+              </div>
+         </>
   )
 }
 
