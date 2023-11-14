@@ -28,12 +28,12 @@ const ShoppingCart = () => {
 <div className="dropContainerGeneral">
     <div className="dropContainer">
               <h5 className="cartAcumulador"> {cart.reduce((acumulador,item)=> {return acumulador + item.quantity},0)}</h5>
-          <div class="dropdown">
+          <div className="dropdown">
               
      
              <img className="cartImage" src="\carrito.b.png"></img>
      
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 
                      <div className="acumuladorContainer">
                           <h3 >Total carrito: $ {cart.reduce((acumulador,item)=> {return acumulador + item.precio *item.quantity},0)}</h3>
