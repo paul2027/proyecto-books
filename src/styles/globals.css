@@ -36,9 +36,9 @@ body {margin:0;}
     
 /***   carrito desplegable   ***/
 
-.dropContainerGeneral {position: relative;
+.dropContainerGeneral {position: absolute;
       right: 1rem;
-bottom : 95.5rem;
+      top: 4.5rem
  }
 
 .dropContainer{ display: flex;
