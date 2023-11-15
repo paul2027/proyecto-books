@@ -115,9 +115,9 @@ margin: 15px}
 
 /* Estilos en modo tablet */
 @media only screen and (min-width: 36.25rem) and (max-width:51.8rem) {
-      .dropContainerGeneral {position: relative;
+      .dropContainerGeneral {position: absolute;
             right: 1rem;
-      bottom : 131.4rem;
+            top: 4.5rem
 }
 .dropdown-content { width: 30rem;
       margin-left: -27.5rem; 
@@ -125,9 +125,9 @@ margin: 15px}
 }
 /*Estilos en modo mobile*/
 @media only screen and (max-width: 36.25rem) {
-      .dropContainerGeneral {position: relative;
-            right: 0rem;
-      bottom : 109rem;
+      .dropContainerGeneral {position: absolute;
+            right: 0.2rem;
+            top: 6rem
 }
 .productContainer {margin-left: 5rem;
                    margin-right: 5rem;}
