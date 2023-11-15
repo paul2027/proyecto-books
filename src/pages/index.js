@@ -8,6 +8,7 @@ import VideoText from "@/organisms/VideoText"
 import CarouselBooks from "@/organisms/CarouselBooks"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import CardscontainerInfo from "@/organisms/CardscontainerInfo"
+import Footer from "@/molecules/Footer"
 
 
 const index = () => {
@@ -20,7 +21,7 @@ const index = () => {
       <br></br>
       <CarouselBooks/>
       <ShoppingCart/>
-      
+      <Footer/>
     </div>
     </>
   )
