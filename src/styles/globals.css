@@ -48,7 +48,9 @@ bottom : 95.5rem;
 
 .dropdown {
       display: 
-       inline-block;
+       inline-block ;
+    
+       
     
 
   }
@@ -71,6 +73,7 @@ bottom : 95.5rem;
       width: 38rem;
       box-shadow: 2px 8px 16px #319FA5;;
       z-index: 1;
+      
     
       
   }
@@ -79,10 +82,10 @@ bottom : 95.5rem;
   /* Mostrar el menú desplegable cuando se pasa el cursor sobre el botón */
   .dropdown:hover .dropdown-content {
       display:block;
-      
-      
-
+    
   }
+ 
+
 
   .cartAcumulador { position: relative;
                   left: 1rem;
@@ -105,7 +108,8 @@ bottom : 95.5rem;
      
 }
 .acumuladorContainer {display: flex;
-justify-content: center;}
+justify-content: center;
+margin: 15px}
 
 .carritOscuro {margin-left: 0.62rem;}
 
@@ -125,6 +129,9 @@ justify-content: center;}
             right: 0rem;
       bottom : 109rem;
 }
+.productContainer {margin-left: 5rem;
+                   margin-right: 5rem;}
+
 .dropdown-content { width: 22rem;
       margin-left: -20rem; 
 ;}
@@ -145,7 +152,7 @@ justify-content: center;}
         align-items: center; 
       }
     }
- acca4dd64e931339df6879d02733e4890a1a3280
+ 
     
 
 
