@@ -278,3 +278,59 @@ justify-content: space-between;
 .estiloTitulo {
   padding-top: 130px;
 }
+  
+           /*****************FOOTER **********************/
+
+.footer {
+      width: 100%;
+  background-color: #49A1A5 ;
+  display: grid;
+  grid-template-areas: "grupo1 grupo2 grupo3"
+  "grupo1 grupo2 grupo3"
+  "grupo1 grupo2 grupo3"
+  "grupo4 grupo4 grupo4";
+  grid-template-rows: 3fr;
+                  grid-template-columns: 1fr;}
+
+  .footer img {
+      width: 50px;}
+
+  .logo img {
+      background-color: white;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px black;
+                  transition: all 0.3s ease;}
+
+  .date ul li {
+      list-style: none;
+                  color: black(181, 236, 218);}
+  .grupo1 h1
+  {color: black;
+  text-align: center;}
+
+  .grupo2 h2, p {
+      color: black;
+                  text-align: center;}
+  .grupo1 {
+      padding-left: 30px;}
+
+  .grupo2 {
+      padding-left: 28%;
+  padding-right: 28%;
+                  padding-top: 10px; }
+
+  .grupo3 {
+      padding-right: 110px;}
+
+  .grupo4 {
+      width: 100%;
+  padding-left: 150%;
+                  margin-bottom: 10px;}
+  .red-social img{
+      transition: all;}
+
+
+  .red-social img:hover{
+      color: black;
+                  transform: scale(1.2)}
