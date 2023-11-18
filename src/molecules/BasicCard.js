@@ -50,19 +50,20 @@ const BasicCard = ({data}) => {
               font-size: 1rem;
               line-height:0.;
               text-align: center;
-              padding-top: 0.rem;
+              padding-top: 0.3rem;
             }
             p {
               line-height:0; 
               font-size: .8rem;
               text-align: center;
-              
-              
+        
+            
             }
             button {
               justify-content:center;
               align-items: center;
               display: inline-block;
+              
             }
 
            
