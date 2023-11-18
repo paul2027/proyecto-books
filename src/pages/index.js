@@ -21,6 +21,7 @@ const index = () => {
       <VideoText/>
       <CardscontainerInfo/>
       <ContainerBestSeller/>
+      <ContainerFiccion/>
       
       <br></br>
       <CarouselBooks/>
