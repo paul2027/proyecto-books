@@ -16,10 +16,7 @@ const GrayCard = () => {
               figure {
               height: 290px;
               width: 210px;
-              border: ;
-              border-radius: ;
               background-color: #f7f7f7;
-              box-shadow: ;
               padding:10px;
               display: flex;
               flex-direction: column;

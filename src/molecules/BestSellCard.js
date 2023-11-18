@@ -30,7 +30,7 @@ const BestSellCard = ({data}) => {
               border-radius: 10px;
               background-color: white;
               box-shadow: 3px 6px 20px;
-              padding:10px;
+              padding:px;
               display: flex;
               flex-direction: column;
             }
