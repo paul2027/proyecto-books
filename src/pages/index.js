@@ -9,6 +9,8 @@ import CarouselBooks from "@/organisms/CarouselBooks"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import CardscontainerInfo from "@/organisms/CardscontainerInfo"
 import Footer from "@/molecules/Footer"
+import ContainerBestSeller from "@/organisms/ContainerBestSeller"
+import ContainerFiccion from "@/organisms/ContainerFiccion"
 
 
 const index = () => {
@@ -18,6 +20,8 @@ const index = () => {
       <Header/>
       <VideoText/>
       <CardscontainerInfo/>
+      <ContainerBestSeller/>
+      
       <br></br>
       <CarouselBooks/>
       <ShoppingCart/>
