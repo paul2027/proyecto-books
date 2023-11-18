@@ -11,6 +11,7 @@ import CardscontainerInfo from "@/organisms/CardscontainerInfo"
 import Footer from "@/molecules/Footer"
 import ContainerBestSeller from "@/organisms/ContainerBestSeller"
 import ContainerFiccion from "@/organisms/ContainerFiccion"
+import ContainerClasicos from "@/organisms/ContainerClasicos"
 
 
 const index = () => {
@@ -22,6 +23,7 @@ const index = () => {
       <CardscontainerInfo/>
       <ContainerBestSeller/>
       <ContainerFiccion/>
+      <ContainerClasicos/>
       
       <br></br>
       <CarouselBooks/>

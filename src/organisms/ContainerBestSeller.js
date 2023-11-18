@@ -68,8 +68,9 @@ const ContainerBestSeller = () => {
         justify-content: space-evenly;
         align-content: center;
         background-color: white;
-        padding: 20px;
-        margin: 20px;
+        height:400px;
+        width: 100vw;
+        align-items: center
       }
 
     `}</style>
