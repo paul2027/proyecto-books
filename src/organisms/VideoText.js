@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from './Section'
 import Button from '@/atoms/Boton-Comprar'
-
+import Link from 'next/link';
 
 
 const VideoText = () => {
@@ -16,7 +16,9 @@ const VideoText = () => {
       <div className="text-overlay">
         <h1>Encontrá los mejores<br />libros, ebooks y<br />audiolibros </h1>
         <div className="button-text-overlay">
-        <Button/>
+        <Link href="#containerBestseller">
+          <Button/>
+        </Link>
         </div>
       </div>
       
