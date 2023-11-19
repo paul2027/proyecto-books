@@ -278,3 +278,86 @@ justify-content: space-between;
 .estiloTitulo {
   padding-top: 130px;
 }
+
+/******************FOOTER******************/
+
+.footer {
+      width: 100%;
+      background-color: #49A1A5;
+      display: grid;
+      grid-template-areas: "grupo1 grupo2 grupo3"
+            "grupo1 grupo2 grupo3"
+            "grupo4 grupo4 grupo4";
+      grid-template-rows: 3fr;
+      grid-template-columns: 1fr;
+}
+
+.footer img {
+      width: 60px;
+      margin-top: 20px;
+}
+
+.logo img {
+      background-color: white;
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 1px 1px 5px black;
+}
+
+
+.date ul li {
+      list-style: none;
+      color: black(181, 236, 218);
+}
+
+.grupo1 {
+      color: black;
+      padding-left: 30px;
+      text-align: center;
+}
+.grupo3 img {
+      width: 40px;
+}
+.grupo2 {
+      color: black;
+      padding-left: 26%;
+      padding-right: 28%;
+      padding-top: 20px;
+      text-align: center;
+}
+
+.grupo3 {
+      padding-top: 20px;
+      padding-right: 110px;
+}
+.Payments {
+      padding-top: 40px;
+}
+
+.grupo4 {
+      color: black;
+      width: 100%;
+      position: relative;
+      bottom: 2px;
+      left: 165%;
+      text-align: center;
+}
+
+.grupo1 h2 {
+      font-size: 19px;
+ }
+ .grupo2 h2 {
+      font-size: 19px;
+ }
+ .grupo3 h2 {
+      font-size: 19px;
+ }
+.red-social img {
+      transition: all;
+}
+
+.red-social img:hover {
+      color: black;
+      transform: scale(1.2)
+}
+
