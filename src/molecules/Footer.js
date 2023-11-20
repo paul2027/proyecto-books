@@ -37,11 +37,11 @@ const Footer = () => {
                     <div class="Contacts">
                         <h2><strong>Redes Sociales</strong></h2>
                         <div class="red-social">
-                            <a target="_blank" href="index.html">
+                            <a target="_blank" href="index.js">
                                 <img src="\instagram-logo.png" alt="Instagram" /></a>
-                            <a target="_blank" href="index.html">
+                            <a target="_blank" href="index.js">
                                 <img src="\facebook.png" alt="logo-facebook" /></a>
-                            <a target="_blank" href="index.html"></a>
+                            <a target="_blank" href="index.js"></a>
                             <img src="\twitter-logo-.png" alt="Logo Twiter" />
                         </div>
                     </div>
