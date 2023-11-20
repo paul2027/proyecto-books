@@ -1,4 +1,5 @@
 body {margin:0;
+      overflow-x: hidden;
 }
 
 
@@ -149,11 +150,6 @@ top:385rem}
 
 
 }
-
-/*************  VIDEO  *************/
-
-
-
 
 
 /*************  CARDS INFO  *************/
@@ -371,4 +367,57 @@ justify-content: space-between;
       color: black;
       transform: scale(1.2)
 }
+
+
+/*  estilos footer modo mobile  */
+
+
+@media only screen and (max-width: 36.25rem) {
+      .footer { display:flex;
+           flex-direction: column;
+           align-items: center;
+      
+      position: absolute;
+      top: 430rem
+}
+
+
+.logo img {
+      background-color: white;
+      width: 250px;
+      border-radius: 8px;
+      box-shadow: 1px 1px 5px black;
+      margin-right: 20px;
+      margin-bottom: 20px;
+  
+}
+
+
+.date ul li {
+      list-style: none;
+      color: black(181, 236, 218);
+margin-right: 10px;}
+      
+ .date { margin-right: 45px;
+margin-top: 20px;
+margin-bottom: 20px;}     
+
+
+.grupo3 {
+    
+      margin-left: 100px;
+      margin-bottom: 20px;
+}
+
+
+.grupo4 {
+      color: black;
+      width: 100%;
+      position: relative;
+      bottom: 2px;
+      left: 0%;
+      text-align: center;
+
+}}
+
 

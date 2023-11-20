@@ -6,8 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import CardscontainerInfo from "@/organisms/CardscontainerInfo"
 import Footer from "@/molecules/Footer"
 import ContainerBestSeller from "@/organisms/ContainerBestSeller"
-import ContainerFiccion from "@/organisms/ContainerFiccion"
-import ContainerClasicos from "@/organisms/ContainerClasicos"
+
 import ShoppingCart from "@/organisms/ShoppingCart"
 
 
@@ -21,7 +20,7 @@ const index = () => {
       <ContainerBestSeller/>
       <ShoppingCart/>
       <CarouselBooks/>
-      <Footer/>
+     < Footer/>
    
 
     
