@@ -30,7 +30,7 @@ const ContainerBestSeller = () => {
     <>
     <div>
 
-    <figure>
+    <figure >
          <figcaption>
             <h1>Best Sellers</h1>
          </figcaption>
@@ -50,17 +50,14 @@ const ContainerBestSeller = () => {
         color: #317577
     }
 
-       figure {
+        figure {
          height: 290px;
          width: 210px;
          background-color: white;
          padding:10px;
          display: flex;
          flex-direction: column;
-         text-transform: uppercase;
-         
-         
-      }
+         text-transform: uppercase; }
       
       div {
         display: flex;
@@ -68,9 +65,42 @@ const ContainerBestSeller = () => {
         justify-content: space-evenly;
         align-content: center;
         background-color: white;
-        padding: 20px;
-        margin: 20px;
+        height:400px;
+        width: 100vw;
+        align-items: center
       }
+      
+      @media only screen and (max-width: 36.25rem) {   
+        div { 
+         position: absolute;
+         top: 115rem;}
+
+         figure {
+           height: 110px;
+           width: 210px;
+           background-color: white;
+           padding:10px;
+           display: flex;
+           flex-direction: column;
+           text-transform: uppercase; }
+       }
+       @media only screen and (min-width: 36.25rem) and (max-width:51.8rem) {
+        div { 
+          position: absolute;
+          top: 115rem;
+          }
+ 
+          figure {
+            height: 110px;
+            width: 210px;
+            background-color: white;
+            padding:10px;
+            display: flex;
+            flex-direction: column;
+            text-transform: uppercase; }
+
+       }
+      
 
     `}</style>
   </>

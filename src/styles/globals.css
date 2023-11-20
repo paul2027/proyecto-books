@@ -2,14 +2,7 @@ body {margin:0;
 }
 
 
-
-/*************  SHOIPPING-CART  *************/
-
-  /* contenedor de prueba para productos a comprar*/
-
-  .boxproduct { display: flex;
-      flex-wrap: wrap;
-       }
+/*************  SHOIPPING-CART  ***********/
 
 
   /* boton de limpiar carrito */
@@ -26,22 +19,29 @@ body {margin:0;
            
       }
       
-        /* producto a comprar de prueba */
-      .product { padding:1rem ;
-                  background-color: rgb(64, 107, 121);
-                  color: white;
-                  height: 12.5rem;
-                  width: 11.25rem;
-                  border: solid 1px red ;
-                  border: solid 1px #319FA5; ;
-                  margin: 10px;
-         }
+        /* producto a comprar */
+
+        .cardContainer1 { display:flex;
+            flex-wrap: wrap;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            padding-left :5rem;
+            background-color: #f7f7f7;
+            align-items: center;
+        }
+  
+
+     
+                          
+
+
     
 /***   carrito desplegable   ***/
 
-.dropContainerGeneral {position: relative;
+.dropContainerGeneral {position: absolute;
       right: 1rem;
-bottom : 95.5rem;
+      top: 4.5rem
+      
  }
 
 .dropContainer{ display: flex;
@@ -51,9 +51,8 @@ bottom : 95.5rem;
 
 .dropdown {
       display: 
-       inline-block;
-    
-
+       inline-block ;
+  
   }
 
   .cartImage { width: 3.25rem;
@@ -74,6 +73,7 @@ bottom : 95.5rem;
       width: 38rem;
       box-shadow: 2px 8px 16px #319FA5;;
       z-index: 1;
+      
     
       
   }
@@ -82,10 +82,10 @@ bottom : 95.5rem;
   /* Mostrar el menú desplegable cuando se pasa el cursor sobre el botón */
   .dropdown:hover .dropdown-content {
       display:block;
-      
-      
-
+    
   }
+ 
+
 
   .cartAcumulador { position: relative;
                   left: 1rem;
@@ -108,29 +108,45 @@ bottom : 95.5rem;
      
 }
 .acumuladorContainer {display: flex;
-justify-content: center;}
+justify-content: center;
+margin: 15px}
 
 .carritOscuro {margin-left: 0.62rem;}
 
 /* Estilos en modo tablet */
 @media only screen and (min-width: 36.25rem) and (max-width:51.8rem) {
-      .dropContainerGeneral {position: relative;
+      .dropContainerGeneral {position: absolute;
             right: 1rem;
-      bottom : 131.4rem;
+            top: 4.5rem
+
+
 }
 .dropdown-content { width: 30rem;
       margin-left: -27.5rem; 
 }
+
+
 }
 /*Estilos en modo mobile*/
 @media only screen and (max-width: 36.25rem) {
-      .dropContainerGeneral {position: relative;
-            right: 0rem;
-      bottom : 109rem;
+      .dropContainerGeneral {position: absolute;
+            right: 0.2rem;
+            top: 6rem
 }
+.productContainer {margin-left: 5rem;
+                   margin-right: 5rem;}
+
 .dropdown-content { width: 22rem;
       margin-left: -20rem; 
 ;}
+.cardContainer1 {position: absolute;
+      top: 170rem ;
+  
+      }
+.carouselContainer {position: absolute;
+top:385rem}
+
+
 
 }
 
@@ -147,7 +163,7 @@ justify-content: center;}
         align-items: center; 
       }
     }
- acca4dd64e931339df6879d02733e4890a1a3280
+ 
     
 
 
@@ -271,5 +287,60 @@ justify-content: space-between;
 
 
 .estiloTitulo {
-  padding-top: 130px;
-}
+  padding-top: 130px;}
+  
+           /*****************FOOTER **********************/
+
+.footer {
+      width: 100%;
+  background-color: #49A1A5 ;
+  display: grid;
+  grid-template-areas: "grupo1 grupo2 grupo3"
+  "grupo1 grupo2 grupo3"
+  "grupo1 grupo2 grupo3"
+  "grupo4 grupo4 grupo4";
+  grid-template-rows: 3fr;
+                  grid-template-columns: 1fr;}
+
+  .footer img {
+      width: 50px;}
+
+  .logo img {
+      background-color: white;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px black;
+                  transition: all 0.3s ease;}
+
+  .date ul li {
+      list-style: none;
+                  color: black(181, 236, 218);}
+  .grupo1 h1
+  {color: black;
+  text-align: center;}
+
+  .grupo2 h2, p {
+      color: black;
+                  text-align: center;}
+  .grupo1 {
+      padding-left: 30px;}
+
+  .grupo2 {
+      padding-left: 28%;
+  padding-right: 28%;
+                  padding-top: 10px; }
+
+  .grupo3 {
+      padding-right: 110px;}
+
+  .grupo4 {
+      width: 100%;
+  padding-left: 150%;
+                  margin-bottom: 10px;}
+  .red-social img{
+      transition: all;}
+
+
+  .red-social img:hover{
+      color: black;
+                  transform: scale(1.2)}

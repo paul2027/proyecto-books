@@ -39,10 +39,11 @@ const ContainerFiccion = () => {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-evenly;
+          align-content: center;
           background-color: #f7f7f7;
           height:400px;
           width: 100vw;
-          align-items: center
+          align-items: center;
         }
       `}</style>
     </>

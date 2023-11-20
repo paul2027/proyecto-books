@@ -30,50 +30,55 @@ const VideoText = () => {
          overflow-x: hidden;
          overflow-y: hidden;
   }
-  
+
      video {
         width: 99vw;
         height: 100vh;
         object-fit: cover;
         overflow-x: hidden;
   }
-  
 
     .text-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: right;
-    text-align: right;
-    color: #fff; 
-    text-align:right;
-    letter-spacing: 1px;  
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: right;
+        text-align: right;
+        color: #fff; 
+        text-align:right;
+        letter-spacing: 1px;  
   }
   
   .text-overlay h1 {
-    font-size: 55px;
-    margin-right: 60px;
+        font-size: 55px;
+        margin-right: 60px;
   }
   
   .text-overlay p {
-    font-size: 16px;
+        font-size: 16px;
   }
   .button-text-overlay{
-    margin: 20px 60px; 
+        margin: 20px 60px; 
   }
   
-
+  @media (max-width: 767px) {
+    .text-overlay {
+        text-align: center;
+        margin: 0px 0px 20px 30px ; 
+        
+    }
 `}
 
 </style>
 
     
     </>
+
   )
 }
 

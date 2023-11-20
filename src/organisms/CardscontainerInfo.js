@@ -30,38 +30,50 @@ const CardscontainerInfo = () => {
             infocliente.map((infocliente, index) => (<CardsInfo key={infocliente.id} infocliente={infocliente}/>
         ))}
 
-
     
     </div>
 
     <style jsx>{`
     
-    div{
-      display: flex;
-      flex wrap: wrap; 
-      background-color: #EAEAEA;
-      height:150px;
+    .cards-container-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 10px; 
+      background-color: #eaeaea;
+      height: auto;
       width: 99vw;
       overflow-x: hidden;
       justify-content: center;
-      
-      
-    
-  }
-  
-    
-  @media (max-width: 768px) {
-    .cards-container-info {
-      flex-direction: column;
-      align-items: center; 
+      padding: 10px; 
     }
 
+    
+
+    @media (max-width: 767px) {
+      .cards-container-info {
+        grid-template-columns: 3fr;
+        align-items: right;
+
+      }
+      .cards-container-info .card {
+        width: calc(100% - 20px);
+        margin: 10px;
+      }
+
+      .cards-container-info .card img {
+        width: 20%;
+        height: auto;
+      }
+
+    
+
+    }
     
     `}</style>
 
 
-
     </>
+
   )
 }
 

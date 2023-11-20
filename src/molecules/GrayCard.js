@@ -14,22 +14,20 @@ const GrayCard = () => {
        </figure>
        <style jsx >{`
               figure {
-              height: 290px;
-              width: 210px;
-              border: ;
-              border-radius: ;
-              background-color: #f7f7f7;
-              box-shadow: ;
-              padding:10px;
-              display: flex;
-              flex-direction: column;
-              text-transform: uppercase;
-              
-            }   
+                height: 160px;
+                width: 210px;
+                padding:10px;
+                display: flex;
+                flex-direction: column;
+                text-transform: uppercase;
+                margin-left:  80px }   
             h1{
               text-align:center;
               color: #6e6e6e;
             }
+
+            @media only screen and (max-width: 36.25rem) {
+              figure { margin-left:0}
        `}</style>
     </>
   )

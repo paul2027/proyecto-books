@@ -6,13 +6,16 @@ import { cartInitialState } from "./cartInitialState";
 export const cartReducer =( state, action) => {
         switch (action.type) {
 
+
+
             case TYPES.ADD_TO_CART: {
-                const newItem = state.products.find((product) => product.id === action.payload);
+                const newItem = state.Proplibros.find((Proplibro) => Proplibro.id === action.payload);
+                
 
                 const itemInCart = state.cart.find ((item)=> item.id === newItem.id )
 
 
-                return itemInCart
+                return itemInCart 
                 
                 ? {...state, 
                     cart: state.cart.map((item) =>
@@ -25,8 +28,11 @@ export const cartReducer =( state, action) => {
                 : {...state, 
                     cart:[...state.cart , {...newItem , quantity: 1}]
                 }
-                 
+                
+                
             }
+
+            
 
                     
             case TYPES.REMOVE_ONE_PRODUCT: {
@@ -44,6 +50,7 @@ export const cartReducer =( state, action) => {
                     : {...state,
                         cart: state.cart.filter(item => 
                             item.id !== action.payload)}}
+                            
 
              case TYPES.REMOVE_ALL_PRODUCTS: {  
                 

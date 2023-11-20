@@ -4,8 +4,9 @@ const Cards = ({infocliente}) => {
       const {img, title, text} = infocliente;
   return (
     <>
-      <figure>
-        <img src= {img} alt={title}/>
+         <>
+      <figure className="cardsInfo">
+        <img className="imagenInfo"src= {img} alt={title}/>
         <div>
           <figcaption>
             <h3> {title} </h3>
@@ -16,7 +17,7 @@ const Cards = ({infocliente}) => {
 
       <style jsx>
         {`
-          figure {
+          .cardsInfo{
             
             border: none;
             display: flex;
@@ -25,9 +26,9 @@ const Cards = ({infocliente}) => {
             align-items: center; 
             
           }
-          img {
-            max-width: 60%;
-            height: 60%;
+          .imagenInfo {
+            max-width: 40%;
+            height: 40%;
             margin: 0px 50px 0px 50px;
             align-self: center;
             
@@ -52,8 +53,36 @@ const Cards = ({infocliente}) => {
             letter-spacing: 1px;
             text-align: center;
           }
+
+          
+          @media (max-width: 767px) {
+            .imagenInfo{
+              max-width: 20%;
+              height: 20%;
+              margin: 0px 70px 0px 20px;
+              align-self: right;
+              
+            }
+            h3 {
+              margin: 20px 0px 0px 0px;
+              
+            
+            }
+
+            p {
+              display: flex;
+              text-align: left;
+              line-height: 20px;
+
+            }
+
+          
+
         `}
       </style>
+    </>
+
+
     </>
   );
 };
