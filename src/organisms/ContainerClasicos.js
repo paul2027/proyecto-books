@@ -30,7 +30,7 @@ const ContainerClasicos = () => {
         <WhiteCard />
 
         {Proplibros.map((Proplibros) => (
-          <Card key={Proplibros.id} data={Proplibros} />
+          <Card key={Proplibros.id} data={Proplibros }  />
         ))}
       </div>
 

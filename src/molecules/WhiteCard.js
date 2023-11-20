@@ -12,19 +12,27 @@ const WhiteCard = () => {
       </figure>
       <style jsx>{`
         figure {
-          height: 290px;
+          height: 160px;
           width: 210px;
-          background-color: white;
           padding: 10px;
           display: flex;
           flex-direction: column;
           text-transform: uppercase;
+          margin-left:  20px
          
         }
         h1 {
           text-align: center;
           color: #6e6e6e;
         }
+
+        @media only screen and (max-width: 36.25rem) {
+          figure { margin-left:0rem;
+         margin-top:2rem;
+    
+          
+                 position:absolute;
+                top:107rem}
       `}</style>
     </>
   );

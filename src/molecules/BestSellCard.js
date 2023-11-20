@@ -30,7 +30,6 @@ const BestSellCard = ({data}) => {
               border-radius: 10px;
               background-color: white;
               box-shadow: 3px 6px 20px;
-              padding:px;
               display: flex;
               flex-direction: column;
             }
@@ -64,6 +63,9 @@ const BestSellCard = ({data}) => {
               font-size: .8rem;
               text-align: center;
               width: 90%;
+          }
+      
+            
           }
            
        `}</style>

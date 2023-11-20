@@ -5,6 +5,7 @@ import { Carousel } from 'react-bootstrap'
 const CarouselBooks = () => {
   return (
     <>
+  <div className="carouselContainer">
     <Carousel data-bs-theme="dark">
     <Carousel.Item>
       <div className='contenedor'>
@@ -95,6 +96,7 @@ const CarouselBooks = () => {
 
 
   </Carousel>
+  </div>
   </>
   )
 }

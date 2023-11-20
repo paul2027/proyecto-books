@@ -1,30 +1,31 @@
 
 
-import Button from "@/atoms/Boton-Comprar";
 
 
-const BasicCard = ({data}) => {
+const BasicCard = ({data, addToCart}) => {
 
-  const {img, title, price} = data;
+  const {img, title, price,id,autor} = data;
  
  
  
   return (
+
    <>
        <figure>
          <img src={img} alt={title}  />
          <figcaption>
             <h3>{title}</h3>
+            <p>{autor}</p>
             <p>{price}</p>
-            <Button />
+            <button  onClick={()=>addToCart(id)} >Comprar</button>
          </figcaption>
        </figure>
 
 
        <style jsx >{`
               figure {
-              height: 290px;
-              width: 210px;
+              height: 320px;
+              width: 220px;
               border: 0.1px solid black;
               border-radius: 10px;
               background-color: white;
@@ -33,6 +34,12 @@ const BasicCard = ({data}) => {
               display: flex;
               flex-direction: column;
               align-items: center;
+              margin-left: 60px;
+              margin-right: 20px;
+                
+              margin-top: 20px;
+              margin-bottom: 20px;
+          
               
             }
             img {
@@ -65,8 +72,25 @@ const BasicCard = ({data}) => {
               display: inline-block;
               
             }
-
+            @media only screen and (max-width: 36.25rem) {figure {
+              height: 350px;
+              width: 240px;
+              border: 0.1px solid black;
+              border-radius: 10px;
+              background-color: white;
+              box-shadow: 3px 6px 20px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-bottom: 10rem;
+              margin-left: 0.0rem
+             
            
+          
+
+
+            }
+
        `}</style>
    </>
   )

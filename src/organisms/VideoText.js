@@ -1,5 +1,5 @@
 import React from 'react'
-import Section from './Section'
+
 import Button from '@/atoms/Boton-Comprar'
 import Link from 'next/link';
 

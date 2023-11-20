@@ -43,7 +43,7 @@ const ContainerFiccion = () => {
           background-color: #f7f7f7;
           height:400px;
           width: 100vw;
-          align-items: center
+          align-items: center;
         }
       `}</style>
     </>
