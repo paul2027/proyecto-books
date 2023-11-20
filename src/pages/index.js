@@ -21,6 +21,7 @@ const index = () => {
       <ContainerBestSeller/>
       <ShoppingCart/>
       <CarouselBooks/>
+      <Footer/>
    
 
     
