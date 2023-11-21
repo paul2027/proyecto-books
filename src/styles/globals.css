@@ -1,17 +1,35 @@
-body {margin:0;
-      overflow-x: hidden;
+
+/*************  CUSTOM PROPERTIES *************/
+:root {
+      --first-color: #319FA5 ;
+      --white-color: #FFFFFF;
+      --gray-light-color: #6E6E6E ;
+      
 }
+/*************  RESET *************/
 
-
-/*************  SHOIPPING-CART  ***********/
+*{    
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+}
+html{
+      font-size: 16px;
+}
+body {
+      margin:0;
+      overflow-x: hidden;
+      color: var(--white-color);
+}
+/*************  SHOPPING-CART  ***********/
 
 
   /* boton de limpiar carrito */
 .buttonclear {  height: 1.56rem;
             width: 9.37rem;
             margin: 15px;
-            background-color: #319FA5;
-            color: white;
+            background-color: var(--first-color);
+            color: var(--white-color);
             border: none;
             border-radius: .5rem;
             box-shadow: 2px 2px 2px black;
@@ -72,7 +90,7 @@ body {margin:0;
       border-radius: 0.94rem;
       background-color:#eaeaea;   
       width: 38rem;
-      box-shadow: 2px 8px 16px #319FA5;;
+      box-shadow: 2px 8px 16px var(--first-color);
       z-index: 1;
       
     
@@ -94,7 +112,7 @@ body {margin:0;
                   height: 1.37rem;
             background-color: red;
             font-size: medium;
-            color: white;
+            color: var(--white-color);
             border-radius: 1.25rem;
             text-align: center;
             z-index: 1;
@@ -164,13 +182,13 @@ top:385rem}
 
 
 /* Header*/
-.barra-promo {background-color: #6E6E6E;
+.barra-promo {background-color: var(--gray-light-color);
       padding-left:1rem;
       padding-right:1rem;
       text-align: center;
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
-      color: white;
+      color: var(--white-color);
       display: flex;
       flex-direction: row;
     
@@ -199,7 +217,7 @@ justify-content: space-between;
 .Buscador {border-width:2px;
 border-radius:15px;
 border-style: solid;
-border-color: #6E6E6E;
+border-color: var(--gray-light-color);
 width: 200px;
 height: 30px;
 display:flex;
@@ -210,7 +228,7 @@ padding-left: 8px;}
 .Barrabusqueda {border:none;
 background-color:transparent;}
 
-.Menu {background-color:#319FA5;
+.Menu {background-color: var(--first-color);
 display: flex;
 padding-left: 2rem ;
 padding-top:0.5rem ;
@@ -227,7 +245,7 @@ padding-bottom:0.5rem ;}
 }
       
 
-.link-menu {color: white;
+.link-menu {color: var(--white-color);
 padding-right: 1rem;
 text-decoration: none ;
 font-weight: 400;}
@@ -247,7 +265,7 @@ justify-content: space-between;
 .SideBar {
       width: 72vw;
       height: 93vh;
-      background-color: #319fa5f5;
+      background-color: var(--first-color);
       position: absolute;
       padding-left:1rem;
       padding-top:3rem;
@@ -290,7 +308,7 @@ justify-content: space-between;
 
 .footer {
       width: 100%;
-      background-color: #49A1A5;
+      background-color: var(--first-color);
       display: grid;
       grid-template-areas: "grupo1 grupo2 grupo3"
             "grupo1 grupo2 grupo3"
@@ -305,7 +323,7 @@ justify-content: space-between;
 }
 
 .logo img {
-      background-color: white;
+      background-color: var(--white-color);
       width: 250px;
       border-radius: 8px;
       box-shadow: 1px 1px 5px black;
@@ -383,7 +401,7 @@ justify-content: space-between;
 
 
 .logo img {
-      background-color: white;
+      background-color: var(--white-color);
       width: 250px;
       border-radius: 8px;
       box-shadow: 1px 1px 5px black;
