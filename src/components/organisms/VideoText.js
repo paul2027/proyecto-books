@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Button from '@/atoms/Boton-Comprar'
+import Button from '@/components/atoms/Boton-Comprar'
 import Link from 'next/link';
 
 

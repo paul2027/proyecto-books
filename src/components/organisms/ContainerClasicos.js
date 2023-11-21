@@ -1,6 +1,6 @@
 
-import Card from "@/molecules/BasicCard";
-import WhiteCard from "@/molecules/WhiteCard";
+import Card from "@/components/molecules/BasicCard";
+import WhiteCard from "@/components/molecules/WhiteCard";
 
 const Proplibros = [
   {

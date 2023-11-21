@@ -1,4 +1,4 @@
-import CardsInfo from "@/molecules/CardsInfo" 
+import CardsInfo from "@/components/molecules/CardsInfo" 
 
 
 const CardscontainerInfo = () => {

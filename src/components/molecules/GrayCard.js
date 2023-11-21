@@ -1,5 +1,5 @@
 
-import ButtonProd from "@/atoms/Boton-VerProd"
+import ButtonProd from "@/components/atoms/Boton-VerProd"
 
 const GrayCard = () => {
   return (

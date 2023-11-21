@@ -1,7 +1,7 @@
 
 
 
-import BestSellCard from "@/molecules/BestSellCard";
+import BestSellCard from "@/components/molecules/BestSellCard";
 
 
 const Proplibros = [
