@@ -7,8 +7,7 @@ import CartItems from "@/components/molecules/CartItems"
 import Card from "@/molecules/BasicCard"
 import GrayCard from "@/molecules/GrayCard"
 import WhiteCard from "@/molecules/WhiteCard"
-import ContainerFiccion from "./ContainerFiccion"
-import ContainerClasicos from "./ContainerClasicos"
+
 
 
 const ShoppingCart = () => {
@@ -17,13 +16,20 @@ const ShoppingCart = () => {
 
         const [state, dispatch] = useReducer(cartReducer, cartInitialState, )
 
-        const {Proplibros,Proplibros1, cart} = state;
+        const {products, cart} = state;
      
 
         const addToCart = (id) => dispatch ({type: TYPES.ADD_TO_CART , payload:id}) 
 
-
-        const deleteFromCart = (id) => dispatch ({type: TYPES.REMOVE_ONE_PRODUCT, payload:id})
+        const deleteFromCart = (id, all) => {
+          
+          if (all) {
+            dispatch ({type: TYPES.REMOVE_ALL_PRODUCTS, payload:id})
+          } else {
+            dispatch ({type: TYPES.REMOVE_ONE_PRODUCT, payload:id})
+          }
+        }
+          
 
         const clearCart = () => dispatch ({type: TYPES.CLEAR_CART})
 
@@ -61,8 +67,8 @@ const ShoppingCart = () => {
       
         <div className="cardContainer1">
         <GrayCard />
-        {Proplibros.map((Proplibros) => (
-          <Card key={Proplibros.id} data={Proplibros } addToCart={addToCart} />
+        {products.map((product) => (
+          <Card key={products.id} data={product } addToCart={addToCart} />
         ))}
         <WhiteCard />
         </div>

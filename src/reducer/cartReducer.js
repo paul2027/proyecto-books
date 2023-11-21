@@ -9,7 +9,7 @@ export const cartReducer =( state, action) => {
 
 
             case TYPES.ADD_TO_CART: {
-                const newItem = state.Proplibros.find((Proplibro) => Proplibro.id === action.payload);
+                const newItem = state.products.find((product) => product.id === action.payload);
                 
 
                 const itemInCart = state.cart.find ((item)=> item.id === newItem.id )
@@ -37,7 +37,7 @@ export const cartReducer =( state, action) => {
                     
             case TYPES.REMOVE_ONE_PRODUCT: {
                 
-                 const itemToDelete = state.cart.find((item) => item.id === action.payload );
+                 const itemToDelete = state.cart.find(item => item.id === action.payload );
 
                     return itemToDelete.quantity > 1 
                     ? {
