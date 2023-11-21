@@ -3,14 +3,14 @@
 
 export const cartInitialState = { 
 
-   Proplibros :[
+  products :[
 
     {
       id: 1,
       img: "https://images.cdn2.buscalibre.com/fit-in/360x360/88/6a/886aef011bb181c8ded9b998fb552311.jpg",
       title: "El Resplandor",
       autor: "Sephen King",
-      price: 14670  
+      price: 14670 , 
     },
     {
       id: 2,
