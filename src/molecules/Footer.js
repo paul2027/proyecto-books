@@ -16,7 +16,7 @@ const Footer = () => {
                             <li>Condiciones de Compra</li>
                             <li>Promociones Vigentes</li>
                         </ul>
-                        <h2><strong>Contáctanos</strong></h2>
+                        <h2 id="contacto"><strong>Contáctanos</strong></h2>
                         <ul>
                             <li>Books.tiendavirtual@gmail.com</li>
                             <li>Telefono: (601) 860 3226</li>
