@@ -6,7 +6,8 @@ const BasicCard = ({data, addToCart}) => {
 
   const {img, title, price,id,autor} = data;
  
- 
+
+  
  
   return (
 
@@ -17,7 +18,7 @@ const BasicCard = ({data, addToCart}) => {
             <h3>{title}</h3>
             <p>{autor}</p>
             <p>${price}</p>
-            <button  onClick={()=>addToCart(id)} >Comprar</button>
+            <button onClick={()=>addToCart(id) }>Comprar</button>
          </figcaption>
        </figure>
 

@@ -1,6 +1,6 @@
 
-import Card from "@/molecules/BasicCard";
-import GrayCard from "@/molecules/GrayCard";
+import Card from "@/components/molecules/BasicCard";
+import GrayCard from "@/components/molecules/GrayCard";
 
 const Proplibros = [
   {

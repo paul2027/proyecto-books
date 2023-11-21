@@ -1,13 +1,13 @@
 
-import Header from "@/molecules/Header"
-import VideoText from "@/organisms/VideoText"
-import CarouselBooks from "@/organisms/CarouselBooks"
+import Header from "@/components/molecules/Header"
+import VideoText from "@/components/organisms/VideoText"
+import CarouselBooks from "@/components/organisms/CarouselBooks"
 import 'bootstrap/dist/css/bootstrap.min.css'
-import CardscontainerInfo from "@/organisms/CardscontainerInfo"
-import Footer from "@/molecules/Footer"
-import ContainerBestSeller from "@/organisms/ContainerBestSeller"
+import CardscontainerInfo from "@/components/organisms/CardscontainerInfo"
+import Footer from "@/components/molecules/Footer"
+import ContainerBestSeller from "@/components/organisms/ContainerBestSeller"
 
-import ShoppingCart from "@/organisms/ShoppingCart"
+import ShoppingCart from "@/components/organisms/ShoppingCart"
 
 
 const index = () => {
