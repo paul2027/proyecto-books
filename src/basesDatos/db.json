@@ -1,5 +1,5 @@
 {
-    "productos" :[
+    "products" :[
 
         {
           "id": 1,
@@ -47,6 +47,6 @@
     
       ],
 
-     "carrito" : [ 
+     "cart" : [ 
     ]
 }

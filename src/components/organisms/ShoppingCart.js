@@ -20,21 +20,20 @@ const ShoppingCart = () => {
         const {products, cart} = state;
 
      const upDateState = async  () => {
-          
-            
 
-        const ENDPOINTS = { productos : " http://localhost:3010/productos" ,
-                            carrito :"http://localhost:3010/carrito"  };
 
-                            const resProducts = await axios.get (ENDPOINTS.productos),
-                             resCart = await axios.get (ENDPOINTS.carrito);
-                            const productList = await resProducts.data,
-                             carritoItems = await resCart.data
+                             const productsURL = " http://localhost:3010/products" ;
+                             const cartURL = "http://localhost:3010/cart"  ;
+
+                            const resProducts = await axios.get (productsURL);
+                            const resCart = await axios.get (cartURL);
+
+                            const productList = await resProducts.data
+                             const carritoItems = await resCart.data
 
                         
 
-                            dispatch ({type: TYPES.READ_STATE, payload:{ productos1: productList,
-                                                                          carrito1: carritoItems} })
+                            dispatch ({type: TYPES.READ_STATE, payload:[productList, carritoItems] })
                           }
                           
 

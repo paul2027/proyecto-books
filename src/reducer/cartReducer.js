@@ -3,14 +3,16 @@ import { TYPES } from "@/actions/actions";
 import { cartInitialState } from "./cartInitialState";
 
 
+
+
 export const cartReducer =( state, action) => {
         switch (action.type) {
 
             case TYPES.READ_STATE: { 
                 return {
                     ...state ,
-                    products: action.payload.productos1 ,
-                    cart: action.payload.carrito1
+                    products: action.payload[0],
+                    cart: action.payload[1]
 
             }}
 

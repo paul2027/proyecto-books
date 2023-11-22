@@ -3,14 +3,14 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-            <footer class="footer" >
-                <div class="grupo1">
-                    <div class="logo">
+            <footer className="footer" >
+                <div className="grupo1">
+                    <div className="logo">
                         <figure>
                             <a href="index.html"><img src="\logo-books.png" alt="Logo Books.com" /></a>
                         </figure>
                     </div>
-                    <div class="date">
+                    <div className="date">
                         <ul>
                             <li>Politica de Privacidad</li>
                             <li>Condiciones de Compra</li>
@@ -24,7 +24,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div class="grupo2">
+                <div className="grupo2">
                     <h2><strong>Quienes Somos</strong></h2>
                     <p>Books.com es una libreria virtual  la cual surgio de la necesidad
                         de encontrar todo en un mismo lugar,ofreciendo un excelente servicio,
@@ -33,10 +33,10 @@ const Footer = () => {
                     </p>
                 </div>
 
-                <div class="grupo3">
-                    <div class="Contacts">
+                <div className="grupo3">
+                    <div className="Contacts">
                         <h2><strong>Redes Sociales</strong></h2>
-                        <div class="red-social">
+                        <div className="red-social">
                             <a target="_blank" href="index.js">
                                 <img src="\instagram-logo.png" alt="Instagram" /></a>
                             <a target="_blank" href="index.js">
@@ -46,7 +46,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <div class="Payments">
+                        <div className="Payments">
                             <h2><strong>Medios de Pago</strong></h2>
                             <img src="\logo-PSE.png" alt="logo pse" />
                             <img src="\mastercard-logo.png" alt="logo-mastercad" />
@@ -55,7 +55,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="grupo4">
+                <div className="grupo4">
                     <div>
                         <small>&copy; 2023 <b>Books.com</b> Todos los Derechos Reservados.</small>
                     </div>
