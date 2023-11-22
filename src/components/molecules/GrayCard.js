@@ -7,7 +7,7 @@ const GrayCard = () => {
     <figure>
          
          <figcaption>
-            <h1>Ficción</h1>
+            <h1 id="ficcion">Ficción</h1>
            
          </figcaption>
          <ButtonProd />

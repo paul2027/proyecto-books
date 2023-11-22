@@ -6,7 +6,7 @@ const WhiteCard = () => {
     <>
       <figure>
         <figcaption>
-          <h1>Clásicos</h1>
+          <h1 id="clasicos">Clásicos</h1>
         </figcaption>
         <ButtonProd />
       </figure>

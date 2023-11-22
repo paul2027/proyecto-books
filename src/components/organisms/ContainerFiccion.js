@@ -27,7 +27,7 @@ const ContainerFiccion = () => {
   return (
     <>
       <div>
-        <GrayCard />
+        <GrayCard/>
 
         {Proplibros.map((Proplibros) => (
           <Card key={Proplibros.id} data={Proplibros} />

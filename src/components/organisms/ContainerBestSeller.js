@@ -31,8 +31,10 @@ const ContainerBestSeller = () => {
     <div id="containerBestseller">
 
     <figure >
-         <figcaption>
-            <h1>Best Sellers</h1>
+         <figcaption> 
+          
+            <h1 id="best-seller">Best Sellers</h1>
+            
          </figcaption>
        </figure>
       {Proplibros.map((Proplibros) => (
