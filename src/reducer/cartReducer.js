@@ -18,7 +18,7 @@ export const cartReducer =( state, action) => {
 
             case TYPES.ADD_TO_CART: {
                 const newItem = state.products.find((product) => product.id === action.payload)
-                window.confirm("¿Esta seguro que desea agregar este producto al carrito?");
+                window.confirm("¿Esta seguro que desea agregar este producto al carrito?"); 
 
 
 
