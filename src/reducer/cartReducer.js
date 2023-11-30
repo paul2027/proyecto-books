@@ -5,7 +5,7 @@ import { cartInitialState } from "./cartInitialState";
 
 
 
-export const cartReducer =( state, action) => {
+export function cartReducer  ( state, action)  {
         switch (action.type) {
 
             case TYPES.READ_STATE: { 
@@ -17,8 +17,8 @@ export const cartReducer =( state, action) => {
             }}
 
             case TYPES.ADD_TO_CART: {
+                
                 const newItem = state.products.find((product) => product.id === action.payload)
-                window.confirm("¿Esta seguro que desea agregar este producto al carrito?"); 
 
 
 

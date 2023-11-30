@@ -11,6 +11,7 @@ import axios from "axios"
 
 
 
+
 const ShoppingCart = () => {
 
 
@@ -22,38 +23,56 @@ const ShoppingCart = () => {
      const upDateState = async  () => {
 
 
-                             const productsURL = " http://localhost:3010/products" ;
+                             const productsURL = "http://localhost:3010/products" ;
                              const cartURL = "http://localhost:3010/cart"  ;
 
                             const resProducts = await axios.get (productsURL);
                             const resCart = await axios.get (cartURL);
 
-                            const productList = await resProducts.data
-                             const carritoItems = await resCart.data
+                            const newProduct = await resProducts.data
+                            const newCartItem = await resCart.data
 
-                        
-
-                            dispatch ({type: TYPES.READ_STATE, payload:[productList, carritoItems] })
-                          }
                           
+                            dispatch ({type: TYPES.READ_STATE, payload:[newProduct, newCartItem] })
+                          }
+
+
 
                           useEffect(() => {
                            upDateState()
                           }, [])
 
+                          const addToCart = async (id) => {
+                            
+                              const producto = products.find(product => product.id === id);
 
-        const addToCart = (id) => dispatch ({type: TYPES.ADD_TO_CART , payload:id}) 
+                              const res = await axios.post("http://localhost:3010/cart" ,producto);
+                             
 
-        const deleteFromCart = (id, all) => {
-          
-          if (all) {
-            dispatch ({type: TYPES.REMOVE_ALL_PRODUCTS, payload:id})
-          } else {
-            dispatch ({type: TYPES.REMOVE_ONE_PRODUCT, payload:id})
-          }
-        }
-          
+                              dispatch({ type: TYPES.ADD_TO_CART, payload: id});
+                              window.confirm(` Estás seguro de agregar este producto al carrito? `);
 
+                          };
+
+                         
+
+
+                           const deleteFromCart = async (id, all) => {
+                       
+                              if (all) {
+                                await axios.delete(`http://localhost:3010/cart/${id}`);
+                                dispatch({ type: TYPES.REMOVE_ALL_PRODUCTS, payload: id });
+
+                              } else {
+                                await axios.delete(`http://localhost:3010/cart/${id}`);
+                                dispatch({ type: TYPES.REMOVE_ONE_PRODUCT, payload: id });
+
+                              }
+                           
+                          };
+
+        
+        
         const clearCart = () => dispatch ({type: TYPES.CLEAR_CART})
 
 

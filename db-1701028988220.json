@@ -43,5 +43,34 @@
       "price": 9770
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 6,
+      "img": "https://quelibroleo.com/images/libros/libro_1362370739.png",
+      "title": "Crimen y Castigo",
+      "autor": "Fiódor Dostoyevski",
+      "price": 9770
+    },
+    {
+      "id": 4,
+      "img": "https://images.cdn1.buscalibre.com/fit-in/360x360/b0/39/b039af065268818b7bd3b0e016f8db65.jpg",
+      "title": "1984",
+      "autor": "George Orwell",
+      "price": 14670
+    },
+    {
+      "id": 5,
+      "img": "https://planetadelibrosar2.cdnstatics.com/usuaris/libros/fotos/206/original/205240_portada_orgullo-y-prejuicio_jane-austen_201506271719.jpg",
+      "title": "Orgullo y Prejuicio",
+      "autor": "Jane Austen",
+      "price": 16130
+    },
+    {
+      "id": 6,
+      "img": "https://quelibroleo.com/images/libros/libro_1362370739.png",
+      "title": "Crimen y Castigo",
+      "autor": "Fiódor Dostoyevski",
+      "price": 9770
+    }
+  ]
 }
