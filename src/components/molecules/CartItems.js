@@ -14,9 +14,7 @@ const CartItems = ({item, deleteFromCart}) => {
       <figure>
         
         <h4>{title}</h4>
-        <p> {quantity} Unidad(es) : ${ price * quantity}  </p>
-        <button onClick={() => deleteFromCart(id, false)}>Eliminar uno</button><br></br>
-        <button onClick={() => deleteFromCart(id, true)}>Eliminar todos</button>
+        <button onClick={() => deleteFromCart(id, false)}>Eliminar</button><br></br>
         </figure>
 
 <style jsx>{` button {margin:10px;}

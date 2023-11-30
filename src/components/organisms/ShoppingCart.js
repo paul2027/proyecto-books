@@ -19,7 +19,7 @@ const ShoppingCart = () => {
         const [state, dispatch] = useReducer(cartReducer, cartInitialState, )
 
         const {products, cart} = state;
-
+        
      const upDateState = async  () => {
 
 
@@ -82,7 +82,7 @@ const ShoppingCart = () => {
         <>
 <div className="dropContainerGeneral">
     <div className="dropContainer"> 
-              <h5 className="cartAcumulador"> {cart.reduce((acumulador,item)=> {return acumulador + item.quantity},0)}</h5>
+              <h5 className="cartAcumulador"> {cart.length}</h5>
           <div className="dropdown">
               
      
@@ -91,7 +91,7 @@ const ShoppingCart = () => {
               <div className="dropdown-content">
                 
                      <div className="acumuladorContainer">
-                          <h3 >Total carrito: $ {cart.reduce((acumulador,item)=> {return acumulador + item.price * item.quantity},0)}</h3>
+                          <h3 >Total carrito: $ {cart.reduce((acumulador,item)=> {return acumulador + item.price},0)}</h3>
                      </div>
      
                      <div className="productContainer">
